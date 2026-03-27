@@ -267,7 +267,7 @@ Reports: unused local components, detached instances, missing main components, i
  * Knowledge Tools — lookup_design_guidance, ingest_design_reference
  */
 
-import { search, ingestEntry, buildTextEntry, loadEntries, getManifest } from "../engines/knowledge/index.js";
+import { search, ingestEntry, buildTextEntry, loadEntries, getManifest, getAllTags, getAllCategories, browseByCategory, searchChunks } from "../engines/knowledge/index.js";
 
 export function registerKnowledgeTools(server: McpServer): void {
 
@@ -364,4 +364,106 @@ Content is chunked into searchable segments and indexed immediately.`,
       }
     }
   );
+  // ── browse_design_knowledge_by_category ──────────────────────────────────────
+  server.tool(
+    "browse_design_knowledge_by_category",
+    `Browse all entries in the design systems knowledge base filtered by category.
+
+**Available categories:** architecture, components, tokens, a11y, process, tools`,
+    {
+      category: z.enum(["architecture", "components", "tokens", "a11y", "process", "tools"])
+        .describe("Category to browse"),
+    },
+    async ({ category }) => {
+      try {
+        const entries = browseByCategory(category);
+        return {
+          content: [{
+            type: "text" as const,
+            text: JSON.stringify({
+              category,
+              count: entries.length,
+              entries: entries.map(e => ({
+                id: e.id,
+                title: e.title,
+                source: e.source.location,
+                tags: e.metadata.tags,
+                chunkCount: e.chunks.length,
+                preview: e.content.slice(0, 200),
+              })),
+            }),
+          }],
+        };
+      } catch (error) {
+        return { content: [{ type: "text" as const, text: JSON.stringify({ error: String(error) }) }], isError: true };
+      }
+    }
+  );
+
+  // ── get_knowledge_tags ────────────────────────────────────────────────────────
+  server.tool(
+    "get_knowledge_tags",
+    "List all available tags in the design systems knowledge base. Use these to refine your lookup_design_guidance searches.",
+    {},
+    async () => {
+      try {
+        const tags = getAllTags();
+        const categories = getAllCategories();
+        const entries = loadEntries();
+        return {
+          content: [{
+            type: "text" as const,
+            text: JSON.stringify({
+              totalEntries: entries.length,
+              totalChunks: entries.reduce((s, e) => s + e.chunks.length, 0),
+              categories,
+              tags,
+            }),
+          }],
+        };
+      } catch (error) {
+        return { content: [{ type: "text" as const, text: JSON.stringify({ error: String(error) }) }], isError: true };
+      }
+    }
+  );
+
+  // ── search_knowledge_chunks ───────────────────────────────────────────────────
+  server.tool(
+    "search_knowledge_chunks",
+    `Search through specific content chunks in the knowledge base for detailed answers.
+Returns individual matching paragraphs/sections rather than full entries — useful when you need a precise excerpt.`,
+    {
+      query: z.string().min(3).describe("Search query"),
+      limit: z.number().optional().default(5).describe("Number of chunks to return"),
+      category: z.string().optional().describe("Filter by category"),
+    },
+    async ({ query, limit, category }) => {
+      try {
+        const results = searchChunks(query, { limit, category });
+        if (!results.length) {
+          return {
+            content: [{ type: "text" as const, text: JSON.stringify({ message: `No chunks found for "${query}"`, hint: "Try lookup_design_guidance for broader search" }) }],
+          };
+        }
+        return {
+          content: [{
+            type: "text" as const,
+            text: JSON.stringify({
+              query, count: results.length,
+              chunks: results.map(r => ({
+                source: r.sourceLabel,
+                entry: r.entryTitle,
+                section: r.chunk.metadata?.section,
+                content: r.chunk.text,
+                relevanceScore: r.score,
+              })),
+            }),
+          }],
+        };
+      } catch (error) {
+        return { content: [{ type: "text" as const, text: JSON.stringify({ error: String(error) }) }], isError: true };
+      }
+    }
+  );
+
 }

@@ -39,6 +39,11 @@ import {
   registerKnowledgeTools,
 } from "./theme-a11y-knowledge-tools.js";
 
+// ── MCP Apps (Token Browser + Design System Dashboard) ───────────────────────
+// Gated behind ENABLE_MCP_APPS=true env var — zero impact when disabled
+import { registerTokenBrowserApp } from "../apps/token-browser/server.js";
+import { registerDesignSystemDashboardApp } from "../apps/design-system-dashboard/server.js";
+
 export function registerAllTools(
   server: McpServer,
   getDesktopConnector: () => Promise<any>,
@@ -68,4 +73,53 @@ export function registerAllTools(
   registerThemeTools(server, getDesktopConnector);
   registerA11yTools(server, getDesktopConnector);
   registerKnowledgeTools(server);
+
+  // ── MCP Apps — interactive UI panels (opt-in via ENABLE_MCP_APPS=true) ──────
+  if (process.env.ENABLE_MCP_APPS === "true") {
+    // Token Browser: "browse the design tokens" → opens interactive token explorer
+    registerTokenBrowserApp(server, async (fileUrl?: string) => {
+      const connector = await getDesktopConnector();
+      const code = `(async () => {
+        const cols = await figma.variables.getLocalVariableCollectionsAsync();
+        const vars = await figma.variables.getLocalVariablesAsync();
+        return {
+          variables: vars.map(v => ({
+            id: v.id, name: v.name, type: v.resolvedType,
+            collectionId: v.variableCollectionId,
+            valuesByMode: v.valuesByMode,
+            description: v.description,
+          })),
+          collections: cols.map(c => ({
+            id: c.id, name: c.name, modes: c.modes, variableIds: c.variableIds,
+          })),
+        };
+      })()`;
+      const result = await connector.executeCodeViaUI(code, 20000);
+      return result.result ?? { variables: [], collections: [] };
+    });
+
+    // Design System Dashboard: "audit the design system" → Lighthouse-style scorecard
+    registerDesignSystemDashboardApp(
+      server,
+      async (fileUrl?: string) => {
+        const connector = await getDesktopConnector();
+        const code = `(async () => {
+          function rgbToHex(r,g,b){return '#'+[r,g,b].map(v=>Math.round(v*255).toString(16).padStart(2,'0')).join('');}
+          const vars = await figma.variables.getLocalVariablesAsync();
+          const cols = await figma.variables.getLocalVariableCollectionsAsync();
+          const comps = figma.currentPage.findAll(n => n.type === 'COMPONENT' || n.type === 'COMPONENT_SET');
+          return {
+            variables: vars.map(v => ({ id:v.id, name:v.name, type:v.resolvedType, collectionId:v.variableCollectionId })),
+            collections: cols.map(c => ({ id:c.id, name:c.name, modes:c.modes })),
+            components: comps.map(c => ({ id:c.id, name:c.name, type:c.type, description:c.description||'' })),
+            fileName: figma.root.name,
+            pageCount: figma.root.children.length,
+          };
+        })()`;
+        const result = await connector.executeCodeViaUI(code, 20000);
+        return result.result ?? { variables: [], collections: [], components: [], fileName: "Unknown", pageCount: 0 };
+      },
+      getCurrentUrl
+    );
+  }
 }

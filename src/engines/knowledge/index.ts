@@ -224,3 +224,43 @@ export function getManifest(): any {
   if (!fs.existsSync(MANIFEST_PATH)) return null;
   return JSON.parse(fs.readFileSync(MANIFEST_PATH, "utf-8"));
 }
+
+// ─── Additional query helpers ─────────────────────────────────────────────────
+
+/** Return all unique tags across all entries */
+export function getAllTags(): string[] {
+  const tags = new Set<string>();
+  for (const entry of loadEntries()) {
+    (entry.metadata.tags ?? []).forEach(t => tags.add(t));
+  }
+  return [...tags].sort();
+}
+
+/** Return all unique categories */
+export function getAllCategories(): string[] {
+  const cats = new Set<string>();
+  for (const entry of loadEntries()) {
+    if (entry.metadata.category) cats.add(entry.metadata.category);
+  }
+  return [...cats].sort();
+}
+
+/** Browse all entries in a specific category */
+export function browseByCategory(category: string): KnowledgeEntry[] {
+  return loadEntries().filter(e => e.metadata.category === category);
+}
+
+/** Search at the chunk level — returns individual matching chunks with parent entry context */
+export function searchChunks(
+  query: string,
+  options: { limit?: number; category?: string } = {}
+): Array<{ chunk: KnowledgeChunk; entryTitle: string; entryId: string; score: number; sourceLabel: string }> {
+  const results = searchLocal(query, options);
+  return results.map(r => ({
+    chunk: r.chunk,
+    entryTitle: r.entry.title,
+    entryId: r.entry.id,
+    score: r.score,
+    sourceLabel: r.sourceLabel,
+  }));
+}
