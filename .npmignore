@@ -1,0 +1,10 @@
+repos/
+src/
+tsconfig*.json
+biome.json
+*.zip
+local-content-library/books/
+local-content-library/scripts/
+.gitignore
+*.test.ts
+*.spec.ts

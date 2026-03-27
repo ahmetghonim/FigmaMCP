@@ -1,0 +1,6 @@
+node_modules/
+dist/
+repos/
+*.zip
+.DS_Store
+local-content-library/books/*.pdf

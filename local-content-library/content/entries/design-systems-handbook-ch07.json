@@ -1,0 +1,48 @@
+{
+  "id": "design-systems-handbook-ch07",
+  "title": "Design Systems Handbook — Chapter 07: Appendix",
+  "source": {
+    "type": "pdf",
+    "location": "Designsystemshandbook.pdf",
+    "ingested_at": "2025-03-26T00:00:00Z"
+  },
+  "content": "Chapter — 07\nAppendix\nMore resources\n\nThere are a number of great resources available for diving further\ninto the world of design systems. The folks at StyleGuides.io have\nnot only assembled a comprehensive list of example style guides\nand design systems, but have also included relevant articles,\nbooks, podcasts , talks, and tools. Alex Pate has assembled a list\nof Awesome design systems on Github. And DesignGuidelines.co\nhas a list of examples, as well as readings and tools.\nFrom these resource...",
+  "chunks": [
+    {
+      "id": "dsh-ch07-chunk-000",
+      "text": "Chapter — 07\nAppendix\nMore resources\n\nThere are a number of great resources available for diving further\ninto the world of design systems. The folks at StyleGuides.io have\nnot only assembled a comprehensive list of example style guides\nand design systems, but have also included relevant articles,\nbooks, podcasts , talks, and tools. Alex Pate has assembled a list\nof Awesome design systems on Github. And DesignGuidelines.co\nhas a list of examples, as well as readings and tools.\nFrom these resources, we’ve curated a list of design systems and\nstyle guides you may find helpful:\n01. Airbnb 12. MailChimp, Voice & Tone\n02. Atlassian 13. Microsoft, Fabric\n03. BBC, Gel 14. Microsoft, Fluent Design\n04. Buzzfeed, Solid 15. Nordnet\n05. FutureLearn 16. Salesforce, Lightning\n06. Github, Primer 17. SAP, Fiori\n07. Google, Material 18. Shopify, Polaris\n08. IBM, Carbon 19. Ubuntu\n09. IBM, Design Language 20. WeWork, Plasma\n10. Lonely Planet, Rizzo 21. Yelp\n11. MailChimp, Patterns",
+      "metadata": {
+        "section": "Appendix",
+        "chunkIndex": 0,
+        "pageRange": "142-144"
+      }
+    },
+    {
+      "id": "dsh-ch07-chunk-001",
+      "text": "About the Authors\nMARCO SUAREZ\nMarco Suarez has helped shape the visual language, design systems, and\ncustomer experiences of companies like Etsy and Mailchimp. His work extends\nbeyond design to influence internal processes that scale across organizations.\nHe is also the co-founder of Methodical Coffee.\nJINA ANNE\nJina Anne is a leading advocate for design systems, having contributed to the\nevolution of systems at Amazon, Salesforce, Asana, and Google. Her work\nhas shaped foundational concepts such as design tokens. She is also the co-\nfounder of the Clarity Conference.\nKATIE SYLOR-MILLER\nKatie Sylor-Miller is Principal Engineer and Web Tech Lead at Square, and\nwas formerly Frontend Architect at Etsy. She specializes in design systems,\nweb performance, accessibility, and frontend infrastructure, and is passionate\nabout the craft of Staff Engineering. As an invited expert on the W3C Web\nPerformance Working Group, she helps guide browser development to improve\nWeb Performance APIs.\nDIANA MOUNTER\nDiana Mounter is Head of Design at GitHub. Her approach blends systems\nthinking, inclusive design, and the perspective of code as a material in the\ndesign process.\nROY STANFIELD\nRoy Stanfield has played a pivotal role in developing design systems at Airbnb\nand Etsy. He currently serves as Principal Product Designer at Shopify.\nAbout Design Better\nHosted by Eli Woolery and Aarron Walter,\nDesign Better explores creativity at the intersection\nof design and technology. Go deeper into design at\ndesignbetter.com",
+      "metadata": {
+        "section": "Appendix",
+        "chunkIndex": 1,
+        "pageRange": "142-144"
+      }
+    }
+  ],
+  "metadata": {
+    "category": "architecture",
+    "tags": [
+      "resources",
+      "references",
+      "tools",
+      "handbook",
+      "designbetter",
+      "smashingmagazine"
+    ],
+    "confidence": "high",
+    "system": "Design Systems Handbook",
+    "authors": "Marco Suarez, Jina Anne, Katie Sylor-Miller, Diana Mounter, Roy Stanfield",
+    "publisher": "DesignBetter.Co by InVision",
+    "year": "2017",
+    "chapter": "07",
+    "last_updated": "2025-03-26T00:00:00Z"
+  }
+}

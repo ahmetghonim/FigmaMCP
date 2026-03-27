@@ -1,0 +1,139 @@
+{
+  "id": "design-systems-handbook-ch05",
+  "title": "Design Systems Handbook — Chapter 05: Expanding Your Design System",
+  "source": {
+    "type": "pdf",
+    "location": "Designsystemshandbook.pdf",
+    "ingested_at": "2025-03-26T00:00:00Z"
+  },
+  "content": "Chapter — 05\nExpanding your\ndesign system\nMore than the sum of its parts\nBy Marco Suarez and Sophie Tahran\n\nAs mentioned in Chapter 1, early software programming was limited\nby the speed and capability of hardware. But over time, hardware\nbecame increasingly faster and cheaper, and the inefficiency of\nsoftware became even more noticeable.\nAs product teams are expected to move faster and faster, speed\nand efficiency is an ever-growing concern. However, design\nsystems enable teams to find speed, e...",
+  "chunks": [
+    {
+      "id": "dsh-ch05-chunk-000",
+      "text": "Chapter — 05\nExpanding your\ndesign system\nMore than the sum of its parts\nBy Marco Suarez and Sophie Tahran\n\nAs mentioned in Chapter 1, early software programming was limited\nby the speed and capability of hardware. But over time, hardware\nbecame increasingly faster and cheaper, and the inefficiency of\nsoftware became even more noticeable.\nAs product teams are expected to move faster and faster, speed\nand efficiency is an ever-growing concern. However, design\nsystems enable teams to find speed, efficiency, and consistency\nthrough reusability. As you experience these benefits, other areas\nof inefficiency that were once unnoticeable become glaring.\nAlignment is often one of those areas. Aligning team members,\nteams, and a company around things like direction, expectations,\nand quality is critical to moving and scaling quickly. Without\nalignment, friction increases and velocity slows—something\nproduct teams cannot afford.\nA design system is a fantastic way to create alignment around\ninterface design and implementation. But beyond components,\nteams can build alignment with vision, design principles, process,\nand voice and tone.",
+      "metadata": {
+        "section": "Expanding Your Design System",
+        "chunkIndex": 0,
+        "pageRange": "107-122"
+      }
+    },
+    {
+      "id": "dsh-ch05-chunk-001",
+      "text": "Vision\nA vision statement moves everyone toward a common destination.\nVision is your North Star. It’s a reusable statement that gives\ncontext to your work to help your team stay on track and in\nsync. A vision statement declares what your team, product, or\ncompany is attempting to achieve and why it’s worth achieving.\nIt’s comprehensive yet memorable, elevating yet attainable.\nVision creates clarity, making non-essentials easier to identify.\nMomentum is far easier to build once everyone knows where\nthey’re going and why.\nA few years ago, the Starbucks product team was reorganizing\nand needed to clarify—for themselves and the entire company—\ntheir reason for existing. In a corporation as large as Starbucks,\nit’s vital to clearly and succinctly express the purpose and value\nof your team.\n“We create digital products that make our customers happy and\nour partners proud.” This statement became their rallying cry. The\nvision grounded decision-making to improve the experience for\ncustomers and partners (baristas, managers, office employees) as\nwell as achieve business goals.\nPRO TIP — Creating your vision statement\nTo create your vision statement, describe what your team,\napplication, or company should look like in two to five years.\nDoes the culmination of your present work add up to that\ndescription? Is that description worth spending the next\nseveral years realizing? If not, adjust your aim. Maybe you\nneed course-correcting or maybe you need to aim higher.",
+      "metadata": {
+        "section": "Expanding Your Design System",
+        "chunkIndex": 1,
+        "pageRange": "107-122"
+      }
+    },
+    {
+      "id": "dsh-ch05-chunk-002",
+      "text": "“It helped us create a system that, we think, is\nclear and scalable across the various global\nmarkets we serve while still being unique.”\nJason Stoff — STARBUCKS\nInformal vision statements for discrete projects also became\nuseful. “Clarity first, then elegance if possible,” was the guiding\nprinciple of a recent redesign.\nWhen we had a few design options for a given\nfeature to discuss as a team, we referred\nback to our goal of clarity at the expense of\nall else, then worked to find a way (if possible)\nto make it elegant.\nJason Stoff — STARBUCKS\nNick Grossman of Union Square Ventures gives several examples\nof how a North Star impacts company alignment\nin his talk, “Purpose, Mission and Strategy.” One example he gives\nis about Foursquare’s product focus moving from the consumer\napp to the direction of being a location data platform that could\npower other applications. This was a massive shift in direction.\nIt was the vision “making cities more delightful” that provided a\nmuch-needed North Star for employees to accept and embrace\nthis new model. Grossman says, “It was a watershed moment for\naligning the company around a new direction.”\n\nIt’s helpful to assess your progress as a team. At Etsy, we held\nretrospectives after every major launch. A retro is a meeting to\ncelebrate the things that went well and identify the things that\ndidn’t for a particular launch. It’s also an opportune time to check\nyour alignment with your vision.\nDesign principles\nDesigners often operate with their own implicit set of standards to\nevaluate the quality of their work. But when teams grow, explicit\nstandards become necessary to unify all with a shared language\nand a guide to evaluating the work. How do you define good\ndesign? How do you know what’s essential and what’s arbitrary?\nHow do you know when something is ready to ship? How do you\nknow if you’re on the path to achieving your vision?",
+      "metadata": {
+        "section": "Expanding Your Design System",
+        "chunkIndex": 2,
+        "pageRange": "107-122"
+      }
+    },
+    {
+      "id": "dsh-ch05-chunk-003",
+      "text": "PRO TIP — Setting the groundwork for your principles\nCreating your principles can seem like an overwhelming\ntask. Before getting to work, establish a set of goals your\nprinciples must achieve. Here are a few examples:\nÒ Should they describe the output or process?\nÒ Should they be a sentence or a phrase?\nÒ Who should they benefit?\nÒ How should they be used?\nBegin your work with a large amount of raw data collected\nfrom your team through discussions, survey, or interviews.\nThen, work through a process of combining, refining, and\nevaluating until you’ve arrived at a comprehensive and\ndistilled set of principles. Etsy has a great article about\ntheir own principles creation process (https://dbtr.co/etsy-\ndesign-principles).\n\nPrinciples are important for design systems\nprimarily for describing how it was created,\nand how the makers of it would intend it to be\nused.\nRich FULCHER — GOOGLE\nFigure 1: Lyft’s design principles build upon each other.\nA system of principles can provide the answers. Design principles\nact as a reusable standard for designers to measure their work.\nThey replace subjective ideals with a shared understanding of\nwhat design must do for users. Just as guardrails keep you safe\nand on the road, design principles keep teams on the path to\nachieving their vision.\nPosting your principles on the office walls, creating a computer\ndesktop wallpaper, adding them to your design systems site, or\nprinting them on notebooks are all great ways to keep them top\nof mind. Task your most senior designers with using them in every",
+      "metadata": {
+        "section": "Expanding Your Design System",
+        "chunkIndex": 3,
+        "pageRange": "107-122"
+      }
+    },
+    {
+      "id": "dsh-ch05-chunk-004",
+      "text": "design critique to ensure the new language is adopted. This new\nsystem of language will become a vital part of your design system\nbecause it creates alignment, enabling your design team to scale.\nDisagreements happened less and less\nbecause we were now aligned.\nSteven Fabre — INVISION\nWhile designing InVision Studio, the design team realized far too\nmuch time was spent debating solutions. So a set of principles\nwas drafted to help navigate the complexity of designing software.\nThese principles were used to guide individual decision-\nmaking, help reach agreements faster as a team, and acted\nas a transcendent standard to create harmony and cohesion\nthroughout the product. The principles were modified over time\nas Studio evolved and needs changed, but these principles aligned\nthe team and helped them keep the velocity they needed.\nJesse Bennett-Chamberlain, Shopify\nListen online:\nPrinciples And Why They’re Important",
+      "metadata": {
+        "section": "Expanding Your Design System",
+        "chunkIndex": 4,
+        "pageRange": "107-122"
+      }
+    },
+    {
+      "id": "dsh-ch05-chunk-005",
+      "text": "Process\nProviding a clearly defined process for how user experience\nproblems are approached and solved builds alignment within\nproduct teams. This consistency helps to remove friction and build\nvelocity.\nIt is only in the repetition of the craft that he\nor she masters the art.\nSamuel Avital — MIME\nProcess guides designers through a series of clearly defined\nmilestones, each with different objectives and deliverables. These\nmilestones act as interdependent components that, when used\ntogether, improve the probability of arriving at optimal solutions.\nA repeatable process offers several key benefits:\n01. It provides clear expectations within each step, allowing\nyou to focus solely on the tasks at hand without worrying\nabout what to do next\n02. It builds data within each step that can be referenced\nand used to inform future iterations or course-correct low\nperforming launches\n03. It creates an understanding of the roles and responsibilities\nof each team member involved—bringing the right people\nin at the right times, making everyone’s involvement\nbeneficial to the quality of the output",
+      "metadata": {
+        "section": "Expanding Your Design System",
+        "chunkIndex": 5,
+        "pageRange": "107-122"
+      }
+    },
+    {
+      "id": "dsh-ch05-chunk-006",
+      "text": "04. A repeatable process will ensure progress is smooth,\nefficient, and predictable while also improving the quality\nand consistency of your work.\nAt InVision, our process has 6 steps:\nFigure 2: The InVision design process.\n01. Understand: First, we use customer research and insights\nto gain a deep understanding of the problem space and\nidentify how it aligns with our business goals. Product\nmanagement leads this phase and works with the research\nteam to conduct interviews, gather data, and perform\ncompetitive research.\n02. Explore: The design team then ideates and explores\npossible solutions. They work with product and research\nteams to produce wireframes, core flows, and user\njourneys.\n03. Define: Once a potential solution has been identified, the\nproduct team works to align everyone on what success\nlooks like. The output of this work is a problem statement\nand defining measurements of success.",
+      "metadata": {
+        "section": "Expanding Your Design System",
+        "chunkIndex": 6,
+        "pageRange": "107-122"
+      }
+    },
+    {
+      "id": "dsh-ch05-chunk-007",
+      "text": "04. Design: Refining the solution is design team’s responsibility.\nThey work with the research, product, and engineering\nteams to develop core flows, prototypes, and identify tech\nrequirements.\n05. Build: Engineering translates the design and prototypes\ninto reality. The product team orchestrates quality\nassurance, support documentation, and the sales and\nmarketing teams.\n06. Learn: At this point, we observe the effectiveness of our\nlaunched solution. The product team collaborates with the\nresearch, design, and engineering teams to gather insights\nto measure against our success metrics. We use these\ninsights to inform our next steps and start the process\nover again.\nVoice and tone\nSophie Tahran, InVision’s UX Writer, weighs in on the value of\nwriting guidelines—and how to create them.\nGreat writing is an essential part of great design, but even in-\nhouse UX writers aren’t able to edit every single word in a product.\nThat’s where writing guidelines come into play. A source of truth\npromotes good communication, credibility, and consistency—no\nmatter who’s writing content.\nEvery writing guide should cover both voice and tone. While your\nvoice generally stays the same (like a personality), your tone shifts\naccording to the situation (like an attitude). Both are an essential\npart of communication—and you can’t ship a product without\neffectively communicating it.",
+      "metadata": {
+        "section": "Expanding Your Design System",
+        "chunkIndex": 7,
+        "pageRange": "107-122"
+      }
+    },
+    {
+      "id": "dsh-ch05-chunk-008",
+      "text": "Because voice identifies who we are and defines our relationships,\nbuilding writing guidelines early on is one of the best ways to gain\ncredibility with your users. They’ll begin to recognize you, and\nknow that they can trust you.\nWriting guidelines also help evolve your voice. Just as your\npersonality matures over time, your voice will evolve as your\ncompany grows. Guidelines define what you should sound like\nright now, so when you do steer away from them, you’ll know that\nyou’re doing so intentionally. (“I’ll just throw an emoji in this subject\nline,” turns into, “Hey, let’s test how emoji perform and see if\nthey’re worth adding to our writing guidelines.”) Without thoughtful\nwriting guidelines, teams risk allowing their voice to be determined\nby patterns instead of users’ needs, and end up making decisions\nsolely based on what they’ve done in the past.\nJesse Bennett-Chamberlain, Shopify\nListen online: Voice and Tone in Polaris",
+      "metadata": {
+        "section": "Expanding Your Design System",
+        "chunkIndex": 8,
+        "pageRange": "107-122"
+      }
+    },
+    {
+      "id": "dsh-ch05-chunk-009",
+      "text": "Building writing guidelines\nStart with an audit. Talk to people across (and outside) the company:\ndesigners, writers, support agents, co- founders, users, etc.\nYour goal is to get their impression of the company’s personality.\nConsider not only conducting interviews, but also creating mood\nboards—visual collections of colors, people, places, and more—to\nrepresent more emotional, intangible qualities.\nDEFINE THE FINDINGS\nHave a core group of people, normally writers, narrow down the\nbest words to describe what you found. Is your voice human, real,\nand bold? Or is it kind, experienced, and empowering? Take into\nconsideration not only how you sound now, but also what you\naspire to be and avoid (“InVision is never clickbait-y or pandering”).\nTone can be more difficult to hammer down. It shifts according to\nthe situation, so it’s sometimes more helpful to provide direction\nthan it is to identify characteristics. State your key priorities, like,\n“Always provide clarity,” and, “Consider the user’s emotional and\nmental state.” This is also a good place to determine whether\nhumor has a place in your writing, and where you fall on the\nformality spectrum.\nOnce you’ve identified the more nebulous aspects of your voice\nand tone, carry that same thinking into the tangible. What should\nyour different channels look like? Do you use sentence case or\ntitle case?\nYou may find that you have a need for multiple guidelines— voice\nand tone within your design system, a company-wide style guide",
+      "metadata": {
+        "section": "Expanding Your Design System",
+        "chunkIndex": 9,
+        "pageRange": "107-122"
+      }
+    },
+    {
+      "id": "dsh-ch05-chunk-010",
+      "text": "focusing on words only, and brand guidelines that also encompass\nvisual design.\nGET BUY-IN\nPotentially more important than building voice and tone guidelines\nis encouraging everyone to follow them. Anyone who works with\ncontent should have a chance to sign off.\nFIND A HOME\nYour guidelines need to be easily found and integrated. If you’re\nbuilding voice and tone into your design system, follow MailChimp\nand Shopify’s lead in giving writing its own section, separate from\ncomponents, principles, and layers. You can also go one step\nfurther by creating a separate list of copy patterns (like Mailchimp\ndid) for grab-and-go words.\nDEVELOP\nWriting guidelines are living, breathing documents that require\nmaintenance as your company grows. From the start, use an\neditable Paper or Google Doc—and better yet, schedule monthly\ncheck-ins.\nInvest time in writing guidelines from the start. Most companies\nhave more people representing their voice than you’d expect, from\nproduct designers to support agents. By having a source of truth—\nand creating it together—you can offer users a better experience.\n\nWhen you have guidelines that are in conflict,\nthen you have to go back to the principles and\ndecide which are more important.\nLori Kaplan — ATLASSIAN\nConclusion\nJust as design is far more than the sum of its parts, your design\nsystem can serve as far more than a components-only guide.\nVision, principles, process, and voice and tone expand your design\nsystem into additional areas where reusability can also increase\nspeed and efficiency.\nDesign systems have changed the way we design and build\napplications—so much so that we must look at the future of design\nthrough the lens of systems. In a future where design systems gain\nwide adoption, design could take on many new, exciting forms.",
+      "metadata": {
+        "section": "Expanding Your Design System",
+        "chunkIndex": 10,
+        "pageRange": "107-122"
+      }
+    },
+    {
+      "id": "dsh-ch05-chunk-011",
+      "text": "Further reading\n01. The Importance of Product Vision to Product Leaders\n02. 7 Problems Growing Design Teams Face\n03. IBM Design Thinking\n04. Design Principles Behind Great Products\n05. Creating Etsy’s Design Principles\n06. Design Doesn’t Scale\n07. A Matter of Principle\n08. A Study of the Design Process\n09. UX Tools for Every Step in Your Design Process\n10. Nicely Said\n11. How Snow White Helped Airbnb’s Mobile Mission\n12. MailChimp’s VoiceandTone.com",
+      "metadata": {
+        "section": "Expanding Your Design System",
+        "chunkIndex": 11,
+        "pageRange": "107-122"
+      }
+    }
+  ],
+  "metadata": {
+    "category": "architecture",
+    "tags": [
+      "scaling",
+      "multi-brand",
+      "growth",
+      "platform",
+      "handbook",
+      "designbetter",
+      "smashingmagazine"
+    ],
+    "confidence": "high",
+    "system": "Design Systems Handbook",
+    "authors": "Marco Suarez, Jina Anne, Katie Sylor-Miller, Diana Mounter, Roy Stanfield",
+    "publisher": "DesignBetter.Co by InVision",
+    "year": "2017",
+    "chapter": "05",
+    "last_updated": "2025-03-26T00:00:00Z"
+  }
+}

@@ -1,0 +1,130 @@
+{
+  "id": "design-systems-handbook-ch01",
+  "title": "Design Systems Handbook — Chapter 01: Introducing Design Systems",
+  "source": {
+    "type": "pdf",
+    "location": "Designsystemshandbook.pdf",
+    "ingested_at": "2025-03-26T00:00:00Z"
+  },
+  "content": "Chapter—01\nIntroducing design\nsystems\nThe power of scale\nBy Marco Suarez\n\nIn the 1960s, computer technology began outpacing the speed of\nsoftware programming. Computers became faster and cheaper,\nbut software development remained slow, difficult to maintain, and\nprone to errors. This gap, and the dilemma of what to do about it,\nbecame known as the “software crisis.”\nFigure 1: A UI audit collects the many permutations of\nsimple UI elements to illustrate how deep in design debt\nyour team is.\nIn 19...",
+  "chunks": [
+    {
+      "id": "dsh-ch01-chunk-000",
+      "text": "Chapter—01\nIntroducing design\nsystems\nThe power of scale\nBy Marco Suarez\n\nIn the 1960s, computer technology began outpacing the speed of\nsoftware programming. Computers became faster and cheaper,\nbut software development remained slow, difficult to maintain, and\nprone to errors. This gap, and the dilemma of what to do about it,\nbecame known as the “software crisis.”\nFigure 1: A UI audit collects the many permutations of\nsimple UI elements to illustrate how deep in design debt\nyour team is.\nIn 1968, at the NATO conference on software engineering,\nDouglas McIlroy presented component-based development as a\npossible solution to the dilemma. Component-based development\nprovided a way to speed up programming’s potential by making\ncode reusable, thus making it more efficient and easier to scale.\nThis lowered the effort and increased the speed of software\ndevelopment, allowing software to better utilize the power of\nmodern computers.",
+      "metadata": {
+        "section": "Introducing Design Systems",
+        "chunkIndex": 0,
+        "pageRange": "4-16"
+      }
+    },
+    {
+      "id": "dsh-ch01-chunk-001",
+      "text": "Now, 50 years later, we’re experiencing a similar challenge, but this\ntime in design. Design is struggling to scale with the applications\nit supports because design is still bespoke— tailor-made solutions\nfor individual problems.\nHave you ever performed a UI audit and found you’re using a few\ndozen similar hues of blue, or permutations of the same button?\nMultiply this by every piece of UI in your app, and you begin to\nrealize how inconsistent, incomplete, and difficult to maintain your\ndesign has become.\nFor design in this state to keep up with the speed of development,\ncompanies could do 1 of 3 things:\n01. Hire more people\n02. Design faster\n03. Create solutions that work for multiple problems\nEven with more hands working faster, the reality is bespoke design\nsimply doesn’t scale. Bespoke design is slow, inconsistent, and\nincreasingly difficult to maintain over time.\nDesign systems enable teams to build better products faster\nby making design reusable—reusability makes scale possible.\nThis is the heart and primary value of design systems. A design\nsystem is a collection of reusable components, guided by clear\nstandards, that can be assembled together to build any number of\napplications.\nFor more than 50 years, engineers have operationalized their\nwork. Now it’s time for design to realize its full potential and\njoin them.",
+      "metadata": {
+        "section": "Introducing Design Systems",
+        "chunkIndex": 1,
+        "pageRange": "4-16"
+      }
+    },
+    {
+      "id": "dsh-ch01-chunk-002",
+      "text": "Scaling design with\nsystems thinking\nYou’re probably well aware that design systems have become a bit\nof a hot topic in the software industry these days—and for good\nreason. Design is scaling. Many businesses are investing in design\nas they recognize that the customer experience of their products\noffers a competitive advantage, attracts and retains customers,\nand reduces support costs.\nHere are what things usually look like inside a company that’s\ninvesting in design:\nÒ The design team is growing\nÒ Design is embedded in teams throughout the company,\nmaybe in multiple locations\nÒ Design is playing a key role in all products on all platforms\nIf you’re a designer, this sort of investment in design may sound\nexciting, but with it comes many challenges. How will you design\nconsistent UIs across platforms when many teams own various\nparts of your products? How will you empower all of these teams\nto iterate quickly? How will you maintain the inevitable design debt\nthat will build up as many designers create new and tailor-made\ndesigns?\nTo understand how creating a design system can address these\nchallenges, we must understand what design systems are.\nDesign systems marry two concepts with individual merit, making\nsomething more powerful than its separate parts.",
+      "metadata": {
+        "section": "Introducing Design Systems",
+        "chunkIndex": 2,
+        "pageRange": "4-16"
+      }
+    },
+    {
+      "id": "dsh-ch01-chunk-003",
+      "text": "It wasn’t hard to get them to follow the\nguidelines, it was hard to get them to agree\non the guidelines.\nLori Kaplan — ATLASSIAN\nStandards\nUnderstanding not only the what, but the why, behind the design\nof a system is critical to creating an exceptional user experience.\nDefining and adhering to standards is how we create that\nunderstanding. Doing so removes the subjectivity and ambiguity\nthat often creates friction and confusion within product teams.\nStandards encompass both design and development. Standardizing\nthings like naming conventions, accessibility requirements, and\nfile structure will help teams work consistently and prevent errors.\nVisual language is a core part of your design standards. Defining\nthe purpose and style of color, shape, type, icons, space, and\nmotion is essential to creating a brand aligned and consistent\nuser experience. Every component in your system incorporates\nthese elements, and they play an integral role in expressing the\npersonality of your brand.\nWithout standards, decisions become arbitrary and difficult to\ncritique. Not only does this not scale, it creates an inconsistent\nand frustrating user experience.",
+      "metadata": {
+        "section": "Introducing Design Systems",
+        "chunkIndex": 3,
+        "pageRange": "4-16"
+      }
+    },
+    {
+      "id": "dsh-ch01-chunk-004",
+      "text": "Components\nComponents are portions of reusable code within your system and\nthey serve as the building blocks of your application’s interface.\nComponents range in complexity. Reducing components to a single\nfunction, like a button or a drop down increases flexibility, making\nthem more reusable. More complex components, like tables for\nspecific types of data, can serve their use cases well, but this\ncomplexity limits the number of applicable scenarios. The more\nreusable your components are, the less you need to maintain, and\nthe easier scale becomes.\nLearn more about building components in “Chapter 3: Building\nyour design system.”\nHaving technical knowledge of the Macintosh\nuser interface is a key factor in product\ndesign, but understanding the theories\nbehind the user interface can help you create\nan excellent product.\nMacintosh HIG — APPLE\nComponent-based development reduces technical overhead by\nmaking code reusable. Standards govern the purpose, style, and\nusage of these components. Together, you equip your product\nteam with a system that is easy to use, and you give them an\nunderstanding that clearly links the what with the why.",
+      "metadata": {
+        "section": "Introducing Design Systems",
+        "chunkIndex": 4,
+        "pageRange": "4-16"
+      }
+    },
+    {
+      "id": "dsh-ch01-chunk-005",
+      "text": "PRO TIP — Transcend platforms\nYour visual language can transcend platforms to create\ncontinuity across web, iOS, Android, and email. Document\nand display your visual language in a prominent place within\nyour design system’s site. This will help inform system\ncontributors about how components should look and behave.\nFor instance, Google’s Material Design dives deep into every\naspect of their visual language: Check out their page on color.\nThe value of design systems\nLet’s take a detailed look at the many ways a design system can be\na much-needed painkiller for your growing pains.\nScale design\nAs teams grow, it’s common for designers to concentrate on\ndiscrete areas of an app like search and discovery, account\nmanagement, and more. This can lead to a fragmented visual\nlanguage—like a Tower of Babel of design—with each designer\nspeaking her own language. This happens when designers solve\nproblems individually and not systematically.\nWith no common design language to unite the product, the user\nexperience starts to break down, as does the design process.\nDesign critiques become unproductive when there’s a dearth of\ndesign conventions. To create alignment within teams, there must\nbe a shared source of truth—a place to reference official patterns\nand styles.",
+      "metadata": {
+        "section": "Introducing Design Systems",
+        "chunkIndex": 5,
+        "pageRange": "4-16"
+      }
+    },
+    {
+      "id": "dsh-ch01-chunk-006",
+      "text": "Most often this is a static artifact, such as a design mock, but a\nstatic reference will almost immediately become outdated. That’s\nwhy teams build monuments like Shopify’s Polaris site—a design\nsystem site, built with the system, that documents all aspects of\nthe system including the components, guidelines, and UX best\npractices. And because it is built with the system, it will always be\nup-to-date.\nAn internal design systems site is the best, most accessible source\nof truth for product teams. It provides the gravitational pull to keep\nteam members aligned and in sync.\nJesse Bennett-Chamberlain (Shopify)\nListen Online\nCircumstances For Investing In Polaris\nManage your debt\nAs applications and their teams age, they build debt. Not financial\ndebt, but technical and design debt. Debt is acquired by building\nfor the short-term. Design debt is made up of an overabundance\nof non-reusable and inconsistent styles and conventions, and the\ninterest is the impossible task of maintaining them. Over time,\nthe accumulation of this debt becomes a great weight that slows\ngrowth.\nThe act of creation does not inherently create debt—just like\nspending money doesn’t inherently create financial debt. But using\na design system will keep you on budget by keeping your design",
+      "metadata": {
+        "section": "Introducing Design Systems",
+        "chunkIndex": 6,
+        "pageRange": "4-16"
+      }
+    },
+    {
+      "id": "dsh-ch01-chunk-007",
+      "text": "and code overhead low, while still allowing you to grow and evolve\nyour application.\nDesign consistently\nStandardized components used consistently and repetitively\ncreate a more predictable and easy to understand application.\nStandardized components also allow designers to spend less\ntime focused on style and more time developing a better user\nexperience.\nPrototype faster\nWorking within an existing design system allows you to piece\ntogether flows and interactions as quickly as pulling LEGO blocks\nfrom a bin. This allows you to build an endless amount of prototypes\nand variants for experimentation, helping your team gain insights\nand data fast.\nIterate more quickly\nWhether evolving the style of your UI or making UX changes to a\nflow, using a design system reduces effort from hundreds of lines\nof code to as little as a few characters. This makes iterations quick\nand painless, and experimentation much faster.",
+      "metadata": {
+        "section": "Introducing Design Systems",
+        "chunkIndex": 7,
+        "pageRange": "4-16"
+      }
+    },
+    {
+      "id": "dsh-ch01-chunk-008",
+      "text": "Improve usability\nInconsistent interface conventions hinder usability. When CSS\nfor countless unique interface elements and their interactions\nincrease, so does cognitive load and page weight. This makes\nfor a terrible user experience. It can also create conflicting CSS\nand JavaScript, potentially breaking your app. By using a design\nsystem, you’re able to avoid these conflicts by building a holistic\nlibrary of components, instead of per page, which means you’ll\nspend less time in quality assurance.\nBuild in accessibility\nAccessibility can be implemented at the component level by\noptimizing for those with disabilities, on slow Internet speeds,\nor on old computers. This is an easy usability win. In “Chapter\n3, Building your design system,” Katie Sylor-Miller explains how\ndesign systems can help improve your product’s accessibility and\ncompliance with your country’s laws.\nMyths of design systems\nEven with all their benefits, buy-in for creating a design system\ncan still be a hard sell internally. Designers can feel limited or\nrestrained, but often these perceived weaknesses are the\ngreatest strengths of a design system.\nLet’s debunk common myths you’ll hear as you sell the idea of\ncreating a design system.",
+      "metadata": {
+        "section": "Introducing Design Systems",
+        "chunkIndex": 8,
+        "pageRange": "4-16"
+      }
+    },
+    {
+      "id": "dsh-ch01-chunk-009",
+      "text": "Myth 1: Too limiting\nMyth: Designers embedded in discrete areas of an app see\nqualities that may be different from other areas. Because of this, a\nuniversal system is perceived as being too limiting and might not\nserve the needs of these specific areas.\nReality: Designers often end up creating custom solutions to\nimprove discrete areas of the app, adding to design and technical\ndebt. With a design system, new solutions can be created and fed\nback into the system.\nMyth 2: loss of creativity\nMyth: If designers are restricted to using a design system, then\ndesigners will no longer be free to explore style. Front- end\nbacklogs are often full of design style updates. Evolving the visual\nstyle of an app is typically no small task. This can also be a great\nrisk, as it removes resources from new feature work and may\nnegatively impact usability.\nReality: The components of a design system are interdependent.\nThis means when a change is made in one location, the change\nwill be inherited throughout the whole system. This makes style\nupdates within a system trivial in effort but much greater in\nimpact. What once was weeks— if not months—of work, can now\nbe accomplished in an afternoon.\nMyth 3: one and done\nMyth: Once the design system is designed and built, the work is\ncomplete.",
+      "metadata": {
+        "section": "Introducing Design Systems",
+        "chunkIndex": 9,
+        "pageRange": "4-16"
+      }
+    },
+    {
+      "id": "dsh-ch01-chunk-010",
+      "text": "Reality: A design system is living, meaning it will require ongoing\nmaintenance and improvements as needs arise. Because your\napplication is powered by the reusable components of your system,\nhowever, the application automatically inherits improvements to\nthe system, lowering the effort to maintain the application. This is\nthe power of scaling that a design system offers.\nA lot of the original vision was about the visual\nidentity…we started to understand that it had\nto be a system with really strong interaction\ndesign fundamentals as well.\nRich FULCHER — GOOGLE\nConclusion\nDesign systems are not a fad or even an untested hypothesis.\nFor design to find the scale necessary to match the rapid growth\nof technology, component-based design and development is a\nproven and dependable solution.\nNow that you’ve seen the true value of creating a design system,\nlet’s dive into the actual design process in the next chapter.\n\nFurther reading\n01. Software Crisis\n02. Component-based Software Engineering\n03. The Way We Build\n04. Designed for Growth\n05. Selling a Design System before asking for buy-in\n06. The Design of Everyday Things\n07. What is a Design Language… really?\n08. Things you could be doing instead of designing and building\nthat card component for the umpteenth time\n09. Website Style Guide Resources\n10. Making Material Design\n11. Material Design\n12. Shopify Polaris\n13. Starting a Design System",
+      "metadata": {
+        "section": "Introducing Design Systems",
+        "chunkIndex": 10,
+        "pageRange": "4-16"
+      }
+    }
+  ],
+  "metadata": {
+    "category": "architecture",
+    "tags": [
+      "design-systems",
+      "fundamentals",
+      "scale",
+      "introduction",
+      "handbook",
+      "designbetter",
+      "smashingmagazine"
+    ],
+    "confidence": "high",
+    "system": "Design Systems Handbook",
+    "authors": "Marco Suarez, Jina Anne, Katie Sylor-Miller, Diana Mounter, Roy Stanfield",
+    "publisher": "DesignBetter.Co by InVision",
+    "year": "2017",
+    "chapter": "01",
+    "last_updated": "2025-03-26T00:00:00Z"
+  }
+}

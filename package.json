@@ -1,0 +1,68 @@
+{
+  "name": "fdis",
+  "version": "1.0.0",
+  "description": "Figma Design Intelligence System — A Claude-powered MCP platform for design creation, token orchestration, AI analysis, code generation, multi-tenant theming, and design system knowledge.",
+  "type": "module",
+  "main": "dist/local.js",
+  "types": "dist/local.d.ts",
+  "bin": {
+    "fdis": "./dist/local.js"
+  },
+  "files": [
+    "dist",
+    "figma-desktop-bridge",
+    "local-content-library/content",
+    "local-content-library/scripts",
+    "README.md",
+    "SETUP.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "prepublishOnly": "npm run build",
+    "build": "npm run build:local && npm run build:apps",
+    "build:local": "tsc -p tsconfig.local.json",
+    "build:apps": "cross-env APP_NAME=token-browser vite build && cross-env APP_NAME=design-system-dashboard vite build",
+    "dev": "tsx src/local.ts",
+    "test": "jest",
+    "type-check": "tsc --noEmit",
+    "format": "biome format --write",
+    "lint:fix": "biome lint --fix",
+    "ingest:pdf": "python3 local-content-library/scripts/ingest-pdf.py"
+  },
+  "keywords": [
+    "figma", "mcp", "claude", "anthropic", "design-system", "design-tokens",
+    "ai", "accessibility", "jsx-renderer", "multi-tenant", "white-label",
+    "react", "tailwind", "shadcn", "code-connect", "design-intelligence",
+    "token-orchestration", "design-ops", "figma-plugin"
+  ],
+  "author": "Ahmed Ghonim",
+  "license": "MIT",
+  "engines": { "node": ">=18.0.0" },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.26.0",
+    "@modelcontextprotocol/ext-apps": "^1.0.1",
+    "chrome-remote-interface": "^0.33.2",
+    "pino": "^9.5.0",
+    "pino-pretty": "^13.0.0",
+    "puppeteer-core": "^23.11.1",
+    "uuid": "^11.0.3",
+    "ws": "^8.19.0",
+    "zod": "^3.25.76",
+    "agents": "^0.7.1"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "^2.2.5",
+    "@types/jest": "^29.5.14",
+    "@types/node": "^22.10.2",
+    "@types/uuid": "^10.0.0",
+    "@types/ws": "^8.18.1",
+    "cross-env": "^7.0.3",
+    "jest": "^29.7.0",
+    "ts-jest": "^29.2.5",
+    "tsx": "^4.19.2",
+    "typescript": "5.9.3",
+    "vite": "^6.0.0",
+    "vite-plugin-singlefile": "^2.0.0",
+    "zod-to-json-schema": "^3.25.1"
+  }
+}

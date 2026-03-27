@@ -1,0 +1,20 @@
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "outDir": "dist",
+    "lib": ["ES2022", "DOM"],
+    "skipLibCheck": true
+  },
+  "include": [
+    "src/local.ts",
+    "src/core/**/*",
+    "src/engines/**/*",
+    "src/tools/**/*"
+  ],
+  "exclude": [
+    "node_modules",
+    "dist",
+    "src/apps/**/*",
+    "src/browser/cloudflare.ts"
+  ]
+}

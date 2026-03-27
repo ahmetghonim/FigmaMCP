@@ -1,0 +1,31 @@
+{
+  "version": "1.0.0",
+  "generated_at": "2025-03-26T00:00:00Z",
+  "total_entries": 7,
+  "sources": [
+    {
+      "name": "Design Systems Handbook",
+      "type": "pdf",
+      "file": "Designsystemshandbook.pdf",
+      "authors": "Marco Suarez, Jina Anne, Katie Sylor-Miller, Diana Mounter, Roy Stanfield",
+      "publisher": "DesignBetter.Co by InVision",
+      "year": "2017",
+      "chapters": 7,
+      "entries": 7,
+      "tags": [
+        "handbook",
+        "design-systems",
+        "fundamentals"
+      ]
+    }
+  ],
+  "entries": [
+    "design-systems-handbook-ch03.json",
+    "design-systems-handbook-ch01.json",
+    "design-systems-handbook-ch06.json",
+    "design-systems-handbook-ch02.json",
+    "design-systems-handbook-ch04.json",
+    "design-systems-handbook-ch07.json",
+    "design-systems-handbook-ch05.json"
+  ]
+}

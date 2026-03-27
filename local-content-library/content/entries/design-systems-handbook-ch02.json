@@ -1,0 +1,203 @@
+{
+  "id": "design-systems-handbook-ch02",
+  "title": "Design Systems Handbook — Chapter 02: Designing Your Design System",
+  "source": {
+    "type": "pdf",
+    "location": "Designsystemshandbook.pdf",
+    "ingested_at": "2025-03-26T00:00:00Z"
+  },
+  "content": "Chapter — 02\nDesigning your\ndesign system\nStep by step\nBy Jina Anne\n\nStarting a design system can feel daunting. There are so many\nthings to consider: the design style, how to design for modularity\nand scalability, how it will be used by other teams, how to sell the\nidea to the decision makers in the company. Where is a designer\nto start?\nBig problems are always more manageable when broken into\nsmaller pieces. Before diving into the design process, start by\nconsidering who needs to be involved i...",
+  "chunks": [
+    {
+      "id": "dsh-ch02-chunk-000",
+      "text": "Chapter — 02\nDesigning your\ndesign system\nStep by step\nBy Jina Anne\n\nStarting a design system can feel daunting. There are so many\nthings to consider: the design style, how to design for modularity\nand scalability, how it will be used by other teams, how to sell the\nidea to the decision makers in the company. Where is a designer\nto start?\nBig problems are always more manageable when broken into\nsmaller pieces. Before diving into the design process, start by\nconsidering who needs to be involved in the creation of your\ndesign system and how the team will work together.\nOnce you’ve got the right people assembled, you’re ready to start\nthinking about the design language of the system, which will\ninclude color, typography, spacing, and more. Your visual design\nlanguage will be the foundation of your UI library—a series of\ncomponents that can be assembled to create an interface quickly.\nLet’s take a step-by-step look at how you can start designing your\ndesign system.\nWho should be involved\nBefore beginning work on your design system, take a moment to\nthink about the team you’ll need to bring it to life. Who needs to\nbe involved? Spoiler alert! You’re going to need more than just\ndesigners.",
+      "metadata": {
+        "section": "Designing Your Design System",
+        "chunkIndex": 0,
+        "pageRange": "17-50"
+      }
+    },
+    {
+      "id": "dsh-ch02-chunk-001",
+      "text": "We have this program called the guild…\nessentially we take one person from each\npillar…and for our design system we use them\nas our user research group.\nRachel cohen — LINKEDIN\nHere’s a quick list of the disciplines that can be represented in your\nteam to create an effective design system:\nÒ Designers to define the visual elements of the system\nÒ Front-end developers to create modular, efficient code\nAccessibility experts to ensure your system conforms to standards\nlike WCAG\nÒ Content strategists who can help the team nail the voice\nand tone of the system\nÒ Researchers who can help you understand customer\nneeds\nÒ Performance experts who can ensure your system loads\nquickly on all devices\nÒ Product managers to ensure the system is aligning to\ncustomer needs\nÒ Leaders (VPs and directors) to champion and align the\nvision throughout the company including up to executive\nleadership\n\nOnce you’ve got the right skillsets represented in the design\nsystems team, identify strong leaders to represent each area who\ncan drive decisions forward. Know who on the team can advocate\nfor the areas of the design system.\nWith a team of experts guided by strong leadership, your next task\nis to establish the right team model to help you achieve your goals.\nChoosing the right team model\nThe team model that brings people together is as important\nas the team creating your design system. In “Team Models for\nScaling a Design System,” design systems veteran Nathan Curtis\noutlines three popular team models used in many companies.\nThe solitary model: an “overlord” rules the design system.\nFigure 1: The solitary design system team model—one\nperson rules it all. Image by Nathan Curtis, reused\nwith permission.\nThe centralized team model: A single team maintains the design\nsystem as their full time job.",
+      "metadata": {
+        "section": "Designing Your Design System",
+        "chunkIndex": 1,
+        "pageRange": "17-50"
+      }
+    },
+    {
+      "id": "dsh-ch02-chunk-002",
+      "text": "Figure 2: The centralized design system team model—\none team rules the system. Image by Nathan Curtis,\nreused with permission.\nThe federated model: team members from across the company\ncome together to work on the system.\nFigure 3: The federated design system team model—\npeople from various teams assemble to manage and\ngovern the system. Image by Nathan Curtis, reused with\npermission.\nThere are strengths and weaknesses in each of the above\nmodels. A solitary model is fast and scrappy, but with one person\nin charge of so much the “overlord” can become a bottleneck to\nthe completion of many tasks. . A centralized team keeps the\nsystem well maintained, but they may not be as connected to the\n\ncustomers’ needs as they may be less involved in user research.\nAnd a federated team has great insight into what is needed for\nall the product features and user needs, but can be quite busy\nworking on those areas already.\nMany teams are moving away from the solitary model to the\ncentralized or federated model because, as Nathan mentions in\nhis article, overlords don’t scale. The centralized or federated\nmodels are usually much better for scaling a design system.\nI wrote about the The Salesforce Team Model in response to\nNathan’s article. When I was at Salesforce on the Lightning\nDesign System team, we used a combination of the centralized\nand federated models. In an enterprise organization as big as\nSalesforce, a centralized design systems team was not enough on\nits own. With so many key players involved and the large amount\nof ground we had to cover across products and platforms, we\nneeded an approach that would be more sustainable.\nFigure 4: A hybrid design system team model that we\nused at Salesforce—a central team and members of\nother teams come together to manage and govern the\nsystem.",
+      "metadata": {
+        "section": "Designing Your Design System",
+        "chunkIndex": 2,
+        "pageRange": "17-50"
+      }
+    },
+    {
+      "id": "dsh-ch02-chunk-003",
+      "text": "Though the Lightning Design System has a core team, there\nare also core contributors from many of the product and feature\nareas in the Salesforce ecosystem that act as a federation of\npractitioners who surface new ideas and make requests for the\ndesign system to evolve. Researchers, accessibility specialists,\nlead product designers, prototypers, and UX engineers work\nwith the central design system team to both consume and help\nestablish the patterns, components, and the overall design system.\nEngineers refine all code to make sure the system is performant\nand production ready.\nThough the solitary model is less popular in most teams because\nthe primary contributor can become a bottleneck, there are\nsituations where it can work quite well. In the midst of a political\ncampaign moving at breakneck speeds, Mina Markham had little\ntime to bring in reinforcements as she developed new online assets\nfor Hillary Clinton. She created a design system called Pantsuit to\nhelp many teams in many locations expedite design and production\nwhile maintaining consistency in the campaign brand. The solitary\nmodel let Mina focus on speed first and longevity second, which is\na different tack than a typical enterprise might take.\nFigure 5: Pantsuit, a design system created by Mina\nMarkham for the 2016 Hillary Clinton campaign.",
+      "metadata": {
+        "section": "Designing Your Design System",
+        "chunkIndex": 3,
+        "pageRange": "17-50"
+      }
+    },
+    {
+      "id": "dsh-ch02-chunk-004",
+      "text": "As you determine what team model works for you, consider your\ngoals. If you want to move fast, the solitary method is ideal initially,\nthough some work may need to be done later to fully adopt it across\nother teams. If you want to move fast, but want to encourage buy-\nin from the start, consider the centralized team model. And to get\nthe most buy-in and shared ownership, the federated model is\na good option. In any case, remember that a design system is a\nproduct so staff it like a product instead of a project; you want\npeople committed to maintaining and evolving it.\nWith the team and the model that organizes them established,\nit’s time to start your design system just as you would any new\nproduct: by talking to your customers.\nInterviewing customers\nAs with any product design process, it’s important to do your\nresearch. Who will be using your design system and how will they\nuse it? Your design system will get used much more often if you\ncreate it to fit into the workflow of other teams. By interviewing\nusers, you can pinpoint problems ahead of time, define principles\nthat will help others use the system properly, and focus your\nenergies on the things that will be most important.",
+      "metadata": {
+        "section": "Designing Your Design System",
+        "chunkIndex": 4,
+        "pageRange": "17-50"
+      }
+    },
+    {
+      "id": "dsh-ch02-chunk-005",
+      "text": "PRO TIP — Building empowering style guides with practical\nresearch\nIsaak Hayes and Donna Chan delivered an interesting talk\ntitled, “Building Empowering Style Guides with Practical\nResearch (https://dbtr.co/empowering-style-guides),” at\nClarity Conference (https://dbtr.co/clarity-conf). The talk\nproposes a series of useful techniques that can help you\nconduct research effectively for your design system. After\nthe interviews, they use the data to create design principles,\nmetrics, and user stories.\nA less common group of people to interview are members of your\nopen source community. This is likely in organizations that provide\ndeveloper tools for their customer and partner communities. If\nyou plan to open source your design system—a potentially bigger\nproject—then you’ll need to speak with potential contributors and\nconsumers to discover what use cases your design system will\nneed to satisfy.\nAnd then there are the executives, leaders, and management. It\nis important to get their thoughts as well. You will need their buy-\nin to support and fund the system. Listen to their concerns and\nuse them as actionable goals and metrics to achieve. Examples of\nrequests might be faster shipping of features, better performance,\nand improved UI quality.",
+      "metadata": {
+        "section": "Designing Your Design System",
+        "chunkIndex": 5,
+        "pageRange": "17-50"
+      }
+    },
+    {
+      "id": "dsh-ch02-chunk-006",
+      "text": "With insights in hand from customer interviews, it’s time to take\nan inventory. There are two types of interface inventories to be\ncreated:\nÒ An inventory of the visual attributes (such as spacing,\ncolor, and typography), which will help us create a codified\nvisual language\nÒ An inventory of each UI element (such as buttons, cards,\nand modals), which will help us create a UI library of\ncomponents\nLet’s first focus on a global visual inventory. We’ll get to the UI\nelement inventory later.\nCreating a visual inventory\nOf course, if you’re starting a design system for a product that\ndoesn’t yet exist you can skip this step and jump straight to\ncreating a visual language for your new product. Lucky you!\nConducting a Visual Audit\nAs we start to take inventory, it’s good practice to take a look at\nthe CSS used to create all of those elements you just captured in\nyour visual inventory. Use a tool like CSS Stats to see how many\nrules, selectors, declarations, and properties you have in your style\nsheets. More relevant, it will show you how many unique colors,\nfont sizes, and font families you have. It also shows a bar chart for\nthe number of spacing and sizing values. This is a great way to see\nwhere you can merge or remove values.\n\nFigure 6: Facebook’s 38 unique text colors found by CSS\nStats.\nIf you’re creating an inventory in Sketch use the Sketch-Style-\nInventory plugin to aggregate all colors, text styles, and symbols\nquickly. It also gives you the ability to merge similar styles into one.\nCreating a visual design language\nI must admit, as an art school graduate the visual design language\nin a design system is my favorite part to work on. I love thinking\nabout color theory, typography, and layout, which are at the core\nof any design system.",
+      "metadata": {
+        "section": "Designing Your Design System",
+        "chunkIndex": 6,
+        "pageRange": "17-50"
+      }
+    },
+    {
+      "id": "dsh-ch02-chunk-007",
+      "text": "If we break apart each component of a design system we find these\nfundamental elements that make up its visual design language:\nÒ Colors\nÒ Typography (size, leading, typefaces, and so on)\nÒ Spacing (margins, paddings, positioning coordinates,\nborder spacing)\nÒ Images (icons, illustrations)\nDepending on your needs, you may also include the following to\nfurther standardize the user experience:\nÒ Visual form (depth, elevation, shadows,\nrounded corners, texture)\nÒ Motion\nÒ Sound\nConsider the role each of these design elements plays in a simple\ncomponent like a button. A button typically has a background\ncolor, typography for the label, and spacing inside it. There may\nbe an icon next to the label to create a visual cue. A border on\nthe edge serves as simple ornamentation and may even round the\ncorners. Finally, hovering over or clicking the button could trigger\nanimation or sound as feedback to the user. Though a button may\nseem simple, there are many design decisions required to bring it\nto life.\n\nFigure 7: The many variations of buttons in the Buzzfeed\nSolid design system: buttons applied to both button\nelements and links, in the following modifiers: primary,\nsecondary, transparent, negative, white, disabled, with\nicons, social, small, small with icons, small social, as well\nas a custom button that you can color to your needs.\nDesign tokens\nBefore we dive into visual design standards, I want to discuss\ndesign tokens. Design tokens are the “subatomic” foundation of\na design system implementation. At its simplest, they are name\nand value pairs stored as data to abstract the design properties\nyou want to manage. With the values for all design tokens stored\nin one place, it’s easier to achieve consistency while reducing the\nburden of managing your design system.\nExample: SPACING_MEDIUM: 1rem.",
+      "metadata": {
+        "section": "Designing Your Design System",
+        "chunkIndex": 7,
+        "pageRange": "17-50"
+      }
+    },
+    {
+      "id": "dsh-ch02-chunk-008",
+      "text": "In design tokens you can store colors, spacing, sizing, animation\ndurations, etc, and distribute them to various platforms.\nFigure 8: Example of border radius design tokens on the\nLightning Design System.\nWe’ll look more closely at design tokens in Chapter 3.\nColor\nThe colors you choose for your design system are more than just\nan extension of your brand. A UI uses color to convey:\nÒ Feedback: Error and success states\nÒ Information: Charts, graphs and wayfinding elements\nÒ Hierarchy: Showing structured order through color and\ntypography\nCommon colors in a design system include 1-3 primaries that\nrepresent your brand. If none of these work well as a link and button\n\ncolor, then you may have an extra color for that as well. It’s a good\nidea to use the same color for links and button backgrounds as it\nmakes it easier for users to recognize interactive elements.\nYou’ll likely have neutrals for general UI backgrounds and borders—\nusually greys. And finally, you’ll have colors that are for states such\nas error, warning, and success. Group these colors to see how well\nthey work together and refine as needed.\nFigure 9: Color palette with design tokens in the Carbon\ndesign system.\n\nPRO TIP\nThe in-progress book, Programming Design Systems by\nRune Madsen, has some great chapters on color available\nonline to read, including “A short history of color theory”.\nPRO TIP — Checking color contrast\nThere are a variety of color contrast checkers (https://dbtr.\nco/color-contrast) you can use to ensure your color palette\nworks for everyone who will use your products. Be sure to\ncheck contrast ratios for background and text color pairings.\nLarger design systems sometimes include colors for objects and\nproducts. For example, at Salesforce we had a color for contacts,\nfor sales deals, or groups, and so on. We also had them for products:\nSales Cloud, Marketing Cloud, Analytics Cloud, etc. Color can be a\nhelpful wayfinding tool for your users.\nFigure 10: Colors used for objects in Salesforce.",
+      "metadata": {
+        "section": "Designing Your Design System",
+        "chunkIndex": 8,
+        "pageRange": "17-50"
+      }
+    },
+    {
+      "id": "dsh-ch02-chunk-009",
+      "text": "Using color for wayfinding can be tricky to do while maintaining\naccessibility, as people who are color blind may not be able to\ndiscern some differences.\nDepending on how strict you want to be with your palette, you\nmay want to include a range of tints—a color mixed with white—\nand shades—a color mixed with black. Sometimes you may use\nother colors instead of white or black to avoid muddiness, such as\nan orange to darken a yellow so it doesn’t appear brown.\nThese color variations allow designers to have choices. But\nbe warned, having too many choices can lead to major design\ninconsistencies. Keep your inclusion of tints, shades, and neutral\npalettes slim to prevent misuse of the system while still giving\ndesigners the flexibility they need. You can always add more\ncolors as you find the need.\n\nFigure 11: The Pivotal UI style guide chooses to give a\nwide range of color tints and shades with their design\ntokens. While I personally prefer to only give a leaner set\nof options (as seen in the Sass style guide), some design\nsystems prefer to offer more choices. Consider which\napproach works for you as you balance concerns like\ncreative freedom versus tighter consistency.\nTypography\nFONTS AND WEIGHTS\nThe fonts you choose have a high impact on both your brand and\nyour user experience. Keep legibility in mind as you select the\nright fonts for your system. Keeping to common system fonts like\nHelvetica, Times New Roman, or Verdana can be a great shortcut,\nas they are familiar to the user’s eye. Some companies prefer\ncustom web fonts to better reflect their brand, but pay special\nattention to how you use them as performance can be affected.\nMost design systems I’ve worked on include just two typefaces:\none font for both headings and body copy, and a monospace",
+      "metadata": {
+        "section": "Designing Your Design System",
+        "chunkIndex": 9,
+        "pageRange": "17-50"
+      }
+    },
+    {
+      "id": "dsh-ch02-chunk-010",
+      "text": "font for code. Sometimes there’s an additional font for headings\nthat compliments the body font. Most design systems do not\nhave a need for more, unless you have a system that supports\nmultiple brands. It’s best to keep the number low as it’s not only a\nbest practice of typographic design, it also prevents performance\nissues caused by excessive use of web fonts.\n“Line spacing (leading) is at least space- and-a-half within\nparagraphs, and paragraph spacing is at least 1.5 times\nlarger than the line spacing.”\nWEB CONTENT\nACCESSIBILITY GUIDELINES\n(WCAG) 2.0\nW3C\n\nFigure 12: Google’s Roboto shown in varying weights.\nThese days it’s trendy to use a font at a very thin weight, but be\naware that legibility can become an issue. If you want to use light\nor thin weights, only use them at larger text sizes.\nTYPE SCALE\nWhen selecting the size to set your type, consider the legibility of\nthe font you’ve chosen. In most cases, a 16px font size works well.\nIt’s the default font size in most browsers, and it’s quite easy to\nread for most people. I like using 16px as it works with the 4-based\nmetrics used by Apple and Google (and is gaining traction as the\nstandard approach). I recommend this as your baseline, though I\nwould use it in a relative format like 1rem for CSS-based systems.\nYou can use a modular scale for larger or smaller font sizes for\nother elements such as headings. A modular scale is a set of\nnumbers in which you have 1 base number, and a ratio to generate",
+      "metadata": {
+        "section": "Designing Your Design System",
+        "chunkIndex": 10,
+        "pageRange": "17-50"
+      }
+    },
+    {
+      "id": "dsh-ch02-chunk-011",
+      "text": "the next number. You keep applying the ratio to the new number\nto get yet another number.\nPRO TIP — Understanding modular scale\nLearn more about modular scales to create more meaningful\ntypography.\nFigure 13: The Modular Scale tool helps you find one\nthat works for you. It even provides a Sass version of\nthe tool, which you could add to your design token set.\nAs you design your type treatments, be sure to give thought to\nhow it will respond to various screen sizes to maintain legibility.\nYou won’t want your headings to be too large for mobile devices.\nAnd for much larger displays, you have the room to bump up sizes.\nA common method is to enlarge headings on larger viewports.\nYou can also use viewport units to scale your type based on a\npercentage of your screen size.\n\nLEADING\nLeading, or line-height in CSS, can improve readability and\naesthetics of your typography. While the best line-height can vary\ndepending on the font face and the line length, a general rule of\nthumb is to have leading at around 1.4–1.5x the font-size. 1.5 is\nrecommended by the W3C Web Accessibility Initiative.\nIt also makes your math more predictable, but you don’t have\nto calculate it. You can define your line-height without a unit of\nmeasurement and the browser will do all the hard math for you.\nFor headings, tighten it up depending on your typeface. In most\ncases, I find a 1.25 or 1.125 ratio works quite well.\nFigure 14: Tachyons also use 1.5 for body and 1.25 for\nheadings.",
+      "metadata": {
+        "section": "Designing Your Design System",
+        "chunkIndex": 11,
+        "pageRange": "17-50"
+      }
+    },
+    {
+      "id": "dsh-ch02-chunk-012",
+      "text": "SPACING AND SIZING\nThe system you use for spacing and sizing looks best when you\nhave rhythm and balance. This means using numbers based on\npatterns and proportions. Using a consistent spacing scale also\npromotes maintainability through ratios by making layouts more\npredictable and more likely to “fit” and align well.\nWhen I designed an Android app, I studied Google’s design\nguidelines. I noticed a pattern of using 8dp between elements and\n16dp for outer gutters. It broke me out of using a 10-based scale\nI was accustomed to, as I found that 4-based worked so much\nbetter.\nA 4-based scale is growing in popularity as the recommended\nscale for many reasons. Both iOS and Android use and recommend\nmetrics that are divisible by or multiples of 4. Standard ICO size\nformats, which are used by most operating systems, for icons\ntended be 4-based (16, 24, 32, etc.) so that they scaled more easily.\nThe browser’s default font size is usually 16. When everything is\nusing this system, things are more likely to fit in place and line up.\nAnd finally, responsive math works out well.",
+      "metadata": {
+        "section": "Designing Your Design System",
+        "chunkIndex": 12,
+        "pageRange": "17-50"
+      }
+    },
+    {
+      "id": "dsh-ch02-chunk-013",
+      "text": "Figure 15: The Google Android design guidelines (before\nthis site was replaced by material design). Studying\nthese guidelines made me a better mobile designer.\nFor horizontal spacing, an 8-based scale works quite well. You\ncan make margins and padding equal or in proportion to the font\nsize. But for vertical spacing, I tend to use a 12-based system. This\nis due to the line-height I get of 1.5 (with the default font size of\n16px) getting us to 24.\nOccasionally, you may have to break this rule. If you’ve added a\n1px border to something, this border can throw off alignment by\na hair. So you might find yourself using a padding or margin that\nsubtracts that amount. This is something that you do on a case-\nby-case basis.\nYou probably want elements to grow and shrink with the content.\nFor general sizing, avoid setting widths and heights unless totally\nnecessary. You can achieve responsive design much easier if you\nlet elements flow to fill the space they’re given in the layout.",
+      "metadata": {
+        "section": "Designing Your Design System",
+        "chunkIndex": 13,
+        "pageRange": "17-50"
+      }
+    },
+    {
+      "id": "dsh-ch02-chunk-014",
+      "text": "Images\nFILE FORMATS\nFor icons and illustrations, I find using a vector format (SVG)\nworks best for scalability and responsive design. However, if you\nfind yourself needing to use photography, you may need to use a\nrasterized image format like JPG or PNG.\nFor most photos, illustrations, and diagrams, you can allow\nthe image to go 100% to the container or viewport and let the\nheight automatically set itself by not defining it. This works best\nfor responsive layouts. You may also want to define some preset\nwidths for images if you don’t want it to go full width (for example,\nhalf-width, a third, or a fourth). I recommend setting these as max-\nwidths so that the image can rescale for smaller screens.\nICONOGRAPHY\nBefore drawing your icons, come up with your guidelines around\nthem first. Will they be filled or outline? What is the line weight?\nWill they use more than 1 color? What sizes will they be? Is there\nan icon art boundary set inside an outer boundary?\nYou may have different styles for different icon types. For example,\nutility and action icons (like a notifications bell or a settings cog\nicon) may be solid and one color, while navigation icons may be\nmulticolored and more creative. Clear guidelines will keep your\nicons unified.\n\nFigure 16: Apple shows the different icon types in their\necosystem: app icons, glyphs, and glyphs used on color.\nILLUSTRATIONS\nIllustrations are a great way to add some character to your product.\nYou can use these for empty states, loading screens, modals, and\nother components that invite visual interest.\nShopify went to great lengths to produce unique illustrations for\nall of the empty states of their platform, which conveyed a strong\nsense of brand personality.\nSimilar to icons, it’s helpful to have guidelines for the style of your\nillustrations.",
+      "metadata": {
+        "section": "Designing Your Design System",
+        "chunkIndex": 14,
+        "pageRange": "17-50"
+      }
+    },
+    {
+      "id": "dsh-ch02-chunk-015",
+      "text": "Figure 17: Illustration guidelines by Al Power.\nVisual form\nVisual form, or the material quality of your UI, is about the\nbackground images, gradients, and textures, shadows and\nelevation (z-indexes), rounded corners, and borders. These are\nvisual qualities that help emphasize and decorate elements to add\nvisual hierarchy and aesthetics. In any case, all are examples of\nornamentation that need to be standardized.\nGoogle does a great job indicating how depth and elevation work\nwith layering of components.\n\nFigure 18: An example of depth through elevation in\nGoogle’s material design implemented through z-indexes\nand shadows.\nMotion and sound\nWhen you define your visual language, motion and sound might\nnot immediately come to mind. You experience these in a different\nway. But motion and sound can have a high impact on the\nexperience of your app. You’ll want to have that systemized as well\nfor consistency. I personally haven’t explored these areas as much\nas I’d like to admit, but there are some great examples in the wild.\n\nFigure 19: IBM’s animation guidelines draw upon their\nrich history of products and technology.",
+      "metadata": {
+        "section": "Designing Your Design System",
+        "chunkIndex": 15,
+        "pageRange": "17-50"
+      }
+    },
+    {
+      "id": "dsh-ch02-chunk-016",
+      "text": "Creating a user\ninterface library\nBefore we conducted a visual inventory, which looked at the visual\nqualities of elements, such as color, spacing, and typography.\nNow, we will conduct a UI inventory, in which we look at the actual\npieces of UI—like buttons, cards, lists, forms, and more. Where\nvisual language is all about the visual approach and how things\nlook on a global visual level, a user interface library (otherwise\nknown as a pattern library) looks at actual components of a UI.\nLet’s take a look at each of these design elements and the role\nthey’ll play in your design system. Take stock of all interface\nelements in production to see just how much design debt you\nneed to address and what elements are most commonly used.\nWarning! This can get a bit depressing, as most companies have\nan intense amount of inconsistency in their UIs.\nTo create an interface inventory simply open all products in\nproduction at your organization, screenshot all buttons, forms,\nvarious type styles, images, and collect them in a slide deck or on\nbig posters where the whole team can see.\nYou can do this with cut out print-outs or through screenshots.\nGather the folks you’re involving (as mentioned earlier in this\nchapter). Have them conduct this inventory with you, either\nthrough a shared presentation or via a hands-on activity. The idea\nis to gather the different components you’re using and categorize\nand merge them.",
+      "metadata": {
+        "section": "Designing Your Design System",
+        "chunkIndex": 16,
+        "pageRange": "17-50"
+      }
+    },
+    {
+      "id": "dsh-ch02-chunk-017",
+      "text": "Some like dividing the pieces into elements, components, regions,\nutilities, and so on. Atomic Design is a great example of this line of\nthinking, which is a great conceptual model.\nBut when it comes down to it, everything is pretty much a\ncomponent, so at the end of the day, you could label all as such.\nBut in general, what I see most design systems break things down\ninto are:\nÒ elements (or basics, or atoms)—these are small, stand-\nalone components like buttons and icons\nÒ components (or molecules, or modules)—these are usually\nan assembly of small components into a larger component\nlike a search form (which includes a form input, a button,\nand potentially even a search icon)\nÒ regions (or zones, or organisms)—these are an area of the\nUI like a left-hand navigation\nÒ layouts—how the pieces are laid out on the page (like a\nheader region, followed by a sidebar and main content\narea, followed by a footer)\nAfter you complete the inventory, you can merge and remove what\nyou don’t need (either in a spreadsheet or even directly in a code\nrefactor if you want more immediate change). Also, document\nwhat the component is and when to use it. This will become your\nUI library (or pattern library, or component library, depending on\nwhat your organization chooses to call it.).\n\nFigure 20: The US Government agency 18F has one of\nmy favorite UI libraries: the U.S. Web Design Standards.\nMost design system documentation includes the component’s\nname, description, example, and code. Others may show meta\ndata, release histories, examples, and more. What matters most\nis that you show what’s necessary for your team to get your work\ndone.\n\nFigure 21: The Rizzo component library by Lonely\nPlanet.",
+      "metadata": {
+        "section": "Designing Your Design System",
+        "chunkIndex": 17,
+        "pageRange": "17-50"
+      }
+    },
+    {
+      "id": "dsh-ch02-chunk-018",
+      "text": "Conclusion\nCreating a design system not only helps your team produce more\nconsistent user experiences, it also builds bridges between design\nand development. By creating a common visual language codified\nthrough design tokens, and a set of components and patterns\ncataloged in a UI library, you’ll vastly improve designer/developer\ncommunication. You’ll also have fine-tuned control of the UI in a\nway that is manageable, scalable, and robust.\nFurther reading\n01. Priyanka Godbole’s Design System article series\n02. Nathan Curtis’s Design System article series\n03. Marcin Treder’s Design System article series. Start here\n04. Brad Frost on creating interface inventories\n05. Building a large-scale design system: How we created a design\nsystem for the U.S. government by 18F\n06. Design Systems are for People by Jina Anne",
+      "metadata": {
+        "section": "Designing Your Design System",
+        "chunkIndex": 18,
+        "pageRange": "17-50"
+      }
+    }
+  ],
+  "metadata": {
+    "category": "architecture",
+    "tags": [
+      "design-system",
+      "visual-language",
+      "tokens",
+      "components",
+      "process",
+      "handbook",
+      "designbetter",
+      "smashingmagazine"
+    ],
+    "confidence": "high",
+    "system": "Design Systems Handbook",
+    "authors": "Marco Suarez, Jina Anne, Katie Sylor-Miller, Diana Mounter, Roy Stanfield",
+    "publisher": "DesignBetter.Co by InVision",
+    "year": "2017",
+    "chapter": "02",
+    "last_updated": "2025-03-26T00:00:00Z"
+  }
+}

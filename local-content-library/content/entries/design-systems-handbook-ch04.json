@@ -1,0 +1,239 @@
+{
+  "id": "design-systems-handbook-ch04",
+  "title": "Design Systems Handbook — Chapter 04: Putting Your Design System into Practice",
+  "source": {
+    "type": "pdf",
+    "location": "Designsystemshandbook.pdf",
+    "ingested_at": "2025-03-26T00:00:00Z"
+  },
+  "content": "Chapter — 04\nPutting your design\nsystem into practice\nBetter together\nBy Diane Mounter\n\nHow you develop your design system will influence how you share\nand encourage adoption of the system. Broadly speaking, there\nare 2 general approaches to developing and rolling out a new\ndesign system: incremental and large-scale redesigns.\nIn this chapter, we’ll walk through the 2 approaches, highlight the\npros and cons of each, and discuss adoption strategies.\nLarge-scale redesign\nWhen a team takes this app...",
+  "chunks": [
+    {
+      "id": "dsh-ch04-chunk-000",
+      "text": "Chapter — 04\nPutting your design\nsystem into practice\nBetter together\nBy Diane Mounter\n\nHow you develop your design system will influence how you share\nand encourage adoption of the system. Broadly speaking, there\nare 2 general approaches to developing and rolling out a new\ndesign system: incremental and large-scale redesigns.\nIn this chapter, we’ll walk through the 2 approaches, highlight the\npros and cons of each, and discuss adoption strategies.\nLarge-scale redesign\nWhen a team takes this approach, it often means they spend\nmore time designing the system before rolling it out everywhere,\nincluding doing a visual refresh or consolidation of components.\nThis allows the team to develop a fuller system—from the primitive\nlayer of colors and typography to components, page layouts, and\ninteraction flows.\nSome teams approach their new system by creating imaginary\nproducts to help them step away from the constraints of working\nwithin a real application. Other teams design their new system\nalongside the redesign of a real product or feature.\nTesting with pilot projects\nAt Etsy, I worked with a team of designers and engineers on the\nredesign of seller tools. This project provided a great opportunity\nto test a new approach to our CSS and refresh our visual styles.\nWe built a new style guide alongside the seller tools redesign that\ndocumented implementation and design guidelines.\nThis became a pilot project for testing the new design system.\nRebuilding a real part of the product gave us a great playground for\ntesting new components, responsive layouts, and new typography\nstyles.",
+      "metadata": {
+        "section": "Putting Your Design System into Practice",
+        "chunkIndex": 0,
+        "pageRange": "79-106"
+      }
+    },
+    {
+      "id": "dsh-ch04-chunk-001",
+      "text": "“In From Design Systems: Pilots & Scorecards,” Dan Mall writes\nabout the criteria he uses to find good candidates for design\nsystems pilot projects. Though our approach at Etsy was more\nopportunistic, many of the attributes Mall lists happened to match\nthe seller tools project:\n01. Potential for common components. Does this pilot have\nmany components that can be reused in other products?\n02. Potential for common patterns. Does this pilot have many\npatterns that can be reused in other products?\n03. High-value elements. Even if uncommon, is there a\ncomponent or pattern with high business value at the\nheart of this project? We’re talking about elements that are\nintegral to a flow or audience with unusually high value for\nthe organization.\n04. Technical feasibility. How simple is a technical\nimplementation of the design system? Is a large refactor\nrequired?\n05. Available champion. Will someone working on this product\nsee it through and celebrate/evangelize using the design\nsystem (and even contribute to it)?\n06. Scope. Is this work accomplishable in our pilot timeframe\nof [3–4 weeks] (insert your timing here)?\n07. Technical independence. Is the work decoupled enough\nfrom other legacy design and code that there are clear\nstart and end points?\n08. Marketing potential. Will this work excite others to use the\ndesign system?",
+      "metadata": {
+        "section": "Putting Your Design System into Practice",
+        "chunkIndex": 1,
+        "pageRange": "79-106"
+      }
+    },
+    {
+      "id": "dsh-ch04-chunk-002",
+      "text": "“We don’t really have one team doing all the work…pretty\nmuch every designer and engineer in our organization is a\npart of the system.” https://dbtr.co/twitter-horizon\nTina Koyoma\nTwitter\nThere was one downside to building the new design system\nalongside a product—it ended up being biased to the needs of\nthat product. Afterward, it needed further development to work for\nthe whole Etsy application. Working in a silo with minimal outside\nfeedback allowed us to make progress quickly, but meant that we\nhad to work harder to encourage other teams to adopt the design\nsystem.\nShowing value through a\nsandbox environment\nWhile working on the new Etsy style guide, we set up a simple\nsandbox environment that allowed us to quickly prototype HTML/\nCSS mockups. As we prepared to share the new style guide with\nother designers, we realized the sandbox could be helpful with\nadoption.\nOne of our goals was to reduce the time designers and developers\nhad to spend writing CSS, so they could spend more time iterating\non designs. The new approach we took with CSS, combined\nwith the sandbox environment, made prototyping designs in the\nbrowser fast and easy.\nThe best way for people to see value is to experience it.",
+      "metadata": {
+        "section": "Putting Your Design System into Practice",
+        "chunkIndex": 2,
+        "pageRange": "79-106"
+      }
+    },
+    {
+      "id": "dsh-ch04-chunk-003",
+      "text": "We set everyone up with sandboxes for training. This approach\nempowered people to prototype and experiment with the style\nguide using the sandbox, revealing value through hands-on use.\nTo set people up for success, we wrote tutorials teaching them\nhow to apply different styles—such as atomic vs. component\nclasses, build mobile-first responsive layouts, and create complex\nviews such as a search results page—without writing CSS. To help\npeople understand the why behind our decisions, we included\na presentation on our design principles with example scenarios,\ncode samples, and live coding demos.\nThe sandbox’s CSS environment mirrored production, so a\ndesigner’s prototypes easily translated to a developer’s production\nwork, avoiding costly and unnecessary new CSS. Since code\nprototypes are written in the same language, they gave developers\na better sense of the intent than a static mockup. Developers didn’t\nhave to translate like they do with comps from design tools. This\nfurther helped with adoption. A design system that both designers\nand developers love has a greater chance of success.\nDocumentation is key\nAnother key to adoption is up-to-date documentation. As design\nsystems peers say, “If it’s not documented, it doesn’t exist.”\nWhen styles go undocumented you run the risk of people writing\nnew but duplicate code. Documentation becomes more important\nwhen introducing a new design system because old patterns\ncan outweigh new ones. Documentation helps promote those\nnew patterns, reduce the need to write new code, and makes\nimplementation easy with code examples and guidelines.",
+      "metadata": {
+        "section": "Putting Your Design System into Practice",
+        "chunkIndex": 3,
+        "pageRange": "79-106"
+      }
+    },
+    {
+      "id": "dsh-ch04-chunk-004",
+      "text": "Outdated documentation can cause damage too since it can lead\npeople down the wrong path and cause frustration. It’s worth\ninvesting time in developing practices that help you keep updated\ndocumentation.\nFind opportunities to check documentation accuracy—such\nas before and after an onboarding session, or as you add new\nstyles. Writing docs on the fly helps you test your code and avoid\nbuilding documentation debt. If you can, add tests that check\ndocumentation when patterns are added and updated, and try to\nmake it easy for people to report inaccuracies.\nPRO TIP — Documenting styles\nDocument styles as you add them. It’s easier to do when\nyou’re writing the code while it’s fresh in your mind than\nwaiting to do it later.\nAt Etsy, some engineering teams created onboarding projects for\nnew engineers. This usually involved building a small feature from\nthe backlog that would help them get familiar with the engineering\nstack. I was stoked to see them implementing UI layouts without\nhelp from designers, just by following style guide documentation.\nPost-rollout follow-up\nDesign systems are never done. The launch of your new system\nshould be thought of as version 1.0, with many iterations will follow.\nWhether you form a full-time team to evolve and maintain your\nsystem or not, you likely have a few groups of people interacting\nwith it—makers of the system, users of the system, and users who\nalso contribute to the system. Whatever form your team takes,",
+      "metadata": {
+        "section": "Putting Your Design System into Practice",
+        "chunkIndex": 4,
+        "pageRange": "79-106"
+      }
+    },
+    {
+      "id": "dsh-ch04-chunk-005",
+      "text": "makers need to stay in touch with the needs of users and the\norganization.\nA few months after rolling out the new design system at Etsy, we\nran working sessions with staff from a cross-section of teams.\nOur goal was to learn how to improve the experience for people\nusing and contributing to the system, how successful we’d been\nwith promoting the system, and where it was lacking. We took\na qualitative research approach so that we could be open to\ndiscovering things we didn’t realize were problems—this meant\na lot of face-to-face discussions with light agenda’s to stimulate\nconversation.\n“Clients, colleagues, and stakeholders should embrace the\npliable nature of the digital world to create living design\nsystems that adapt to the ever-shifting nature of the medium,\nuser needs, and the needs of the business.”\n(https://dbtr.co/frost).\nBrad Frost\nAuthor, Atomic Design\nPRO TIP — In-person feedback\nMake time for in-person feedback sessions with internal\nstakeholders, it will expose you to insights that might\notherwise never be uncovered.",
+      "metadata": {
+        "section": "Putting Your Design System into Practice",
+        "chunkIndex": 5,
+        "pageRange": "79-106"
+      }
+    },
+    {
+      "id": "dsh-ch04-chunk-006",
+      "text": "CONTRIBUTORS\nWe ran a user-journey mapping workshop with first-time\ncontributors to understand their experience. We suspected people\nhad mixed experiences—some seemed to struggle or give up on\ntheir contribution entirely, and some had taken a really long time\nto add their new pattern.\nFindings: We discovered how deflating the experience could be\neven when the contribution was successful. This led us to develop\na more collaborative pairing approach and take an encouraging\nmindset toward code review for first-time contributors.\nENGINEERING EARLY ADOPTERS\nWe met with early adopters on product teams with a particular\nfocus on understanding the engineering perspective. Most\nengineers hadn’t taken part in training sessions and had learned\nto use the new design system by reading the style guide.\nFindings: We learned a lot about out holes in our documentation.\nFor example, tutorials didn’t lend themselves well to engineers,\nutilities were useful but buried, and people felt concerned\nabout how to use styles safely in experiments. This led us to\nreorganize and elevate important information up-front, improve\nsearch and navigation, add tutorials that appealed more to\nengineers, and provide more clarity on style usage.\nPRODUCT MANAGERS\nWe ran a session with product managers to walk through the\nnew system and discuss the impact of refactoring and building\nresponsive layouts as part of feature development. Building a",
+      "metadata": {
+        "section": "Putting Your Design System into Practice",
+        "chunkIndex": 6,
+        "pageRange": "79-106"
+      }
+    },
+    {
+      "id": "dsh-ch04-chunk-007",
+      "text": "design system that was responsive by default was a core goal—\nand new for many parts of the Etsy web application.\nFindings: We learned that most product managers trusted their\nengineering managers to guide them with impact on scope—this\nconfirmed communication with engineers was a priority. PMs\nunderstood there might be extra work initially, but moving to the\nnew design system would make front-end implementation easier\nin the future. We showed them they could scope work and make\nprogress iteratively.\nCollaboration creates\ninvestment in adoption\nIt might not be logistically possible to involve your entire company\nin design systems decisions, but some level of collaboration is\nworthwhile.\nBefore Etsy formed a dedicated design systems team, a working\ngroup made of a cross-section of designers drove the evolution of\nthe system. This group met regularly to plan and prioritize projects,\nshare work, and get feedback.\nGroup members collaborated with engineers and specialists where\nneeded, in situations like running experiments on high converting\npages and measuring performance.\nThese collaborations spread adoption even further and resulted in\ndesign system champions across the company. People who spent\ntime contributing to the system were invested in it and promoted\nit to others. Working in a silo had helped us for the short term, but\nextending contributions to outside the team set us up for success\nin the long term.",
+      "metadata": {
+        "section": "Putting Your Design System into Practice",
+        "chunkIndex": 7,
+        "pageRange": "79-106"
+      }
+    },
+    {
+      "id": "dsh-ch04-chunk-008",
+      "text": "Nate Whitson, LinkedIn\nListen Online:\nThe Origin Story of Art Deco\nIncremental rollout\nNot all design systems teams are able to take the time to develop\na fully-fledged system before rolling it out. Many teams have to roll\nout parts of a design system at a time.\nOn the plus side, with an incremental rollout, teams can adopt new\nparts of the system as they become available, which can feel less\ndaunting and disruptive. However, teams will also need to give\nmore thought to communication and promotion of the system.\nWithout a launch, there isn’t a big moment to get everyone’s\nattention. Instead, you need to find and create occasions to\nintroduce people to your design system.\nWhen I joined GitHub and began exploring how the small, then-\npart-time team might turn Primer into a more robust design\nsystem, I knew we weren’t able to go away for a long period of\ntime and develop a complete system. There was a ton of work in\nflight, and no planned re-design or siloed feature we could use as\na pilot project.\nWe needed to figure out the biggest pain points, reduce them to\ntheir smallest part, and roll out Primer updates incrementally.",
+      "metadata": {
+        "section": "Putting Your Design System into Practice",
+        "chunkIndex": 8,
+        "pageRange": "79-106"
+      }
+    },
+    {
+      "id": "dsh-ch04-chunk-009",
+      "text": "Solve problems and win early adopters\nOne of the biggest pain points at GitHub was the amount of time\npeople were spending writing CSS, particularly for things that\nshould have been systematized, such as spacing and typography\nstyles.\nOur solution ended up being the introduction of utilities (single\npurpose classes, often referred to as atomic or functional classes)\nbased on system variables. We weren’t able to start with auditing\ncomponents and page layouts—we had to start small and test the\nfoundation of the system before extending to larger parts. Adding\nutilities enabled us to make styles available without refactoring\ntons of UI. Designers and developers could start to use the\nprimitive styles of the system as soon as we rolled them out.\nOnce people discovered they could use utilities instead of write\nnew CSS, Primer started to catch speed. It solved a real problem\nwhile allowing us to test the primitive layers of the system. From\nthere, we could start to replace and update the component layer\nof styles.\nImprove documentation and findability\nLike at Etsy, documentation was key to adoption at GitHub. Tons\nof widely used patterns in the GitHub codebase weren’t in Primer\nand thus weren’t documented.\nWe sorted through piles of custom CSS and created a directory\nin the GitHub codebase that formed a “waiting room” for patterns\nthat should be moved into Primer. We focused a lot of effort on\ngetting as much as possible documented, whether it was in Primer\nor not. We also focused on adding more layers of documentation,\nincluding describing our class naming conventions, accessibility",
+      "metadata": {
+        "section": "Putting Your Design System into Practice",
+        "chunkIndex": 9,
+        "pageRange": "79-106"
+      }
+    },
+    {
+      "id": "dsh-ch04-chunk-010",
+      "text": "principles, recommendations for tooling to work with our system,\nhow to run linters, and an overview of our style organization and\npackages.\nJust having styles documented wasn’t enough, though. We needed\nto prioritize the style guide navigation and search for findability.\nFigure 1: GitHub’s Primer, components and behaviors\nfor building things on the Web.\nWe originally modeled the navigation to match our package\norganization—core, product, and marketing—prioritizing that\ninformation over the findability of searching for specific styles.\nThe style guide also lacked search and hid styles behind several\nlayers of navigation, forcing multiple clicks before people found\nwhat they were looking for.\nI found myself acting as a human style guide search, with people\npinging me to find what they were looking for rather than finding\nit themselves.\n\nWith research outlining people’s struggles to find styles, and the\nfact that we were wrestling with an aging web app we originally\nused for the style guide, we decided it was worth the effort to\nrebuild and redesign.\nThe new documentation site listed all our styles in the navigation,\nand we added a contextual search that helped people find\ndocumentation with similar keywords—such as finding “color”\nwithin utilities vs. support variables.\nFigure 2: Primer documentation and search.\nGetting a documentation site set up early on was important.\nLooking back, I don’t think it was the wrong choice to repurpose\nan old web app at first—it may not have been ideal, but it did\nwhat we needed. It is important to re-evaluate the quality of your\ndocumentation site over time though, to ensure it meets user\nneeds, and is scaling with your design system as it grows.",
+      "metadata": {
+        "section": "Putting Your Design System into Practice",
+        "chunkIndex": 10,
+        "pageRange": "79-106"
+      }
+    },
+    {
+      "id": "dsh-ch04-chunk-011",
+      "text": "Grow adoption through many touchpoints\nWhen you don’t have that big moment to launch your design\nsystem, use every opportunity to share its value. You’re building\nsystems to solve real problems and you know what your goals\nare—take some time to share those goals and how you plan to\nreach them. These details are helpful when you’re trying to show\nhow changing something like a few lines of CSS matters.\nAt GitHub, we used lots of small interactions to promote Primer\nand the design systems team. Here are a few ways we made our\npiecemeal approach successful:\nCREATIVE COMMENTS IN CODE REVIEW\nWe started to jump in and comment on pull requests in the GitHub\napp that touched CSS or design patterns we were trying to improve.\nThis gave us an opportunity to suggest changes in line with the\nnew design system, and point people to our documentation site\nso they knew it existed.\nWe spread the word about our team and our availability to help\nby adding simple comments to pull requests, such as, “Ping the\ndesign systems team,” or, “Find us in the design systems Slack\nchannel.”\nOver time, people started to CC us on issues and pull requests,\nand we took advantage of features like Code Owners so we got\nautomatically requested for review when someone made CSS\nchanges.",
+      "metadata": {
+        "section": "Putting Your Design System into Practice",
+        "chunkIndex": 11,
+        "pageRange": "79-106"
+      }
+    },
+    {
+      "id": "dsh-ch04-chunk-012",
+      "text": "Figure 3: Servbot comments on pull requests to\nrecommend using system variables instead of static\nvalues.\nRecently, we’ve started adding bot scripts that comment on pull\nrequests with simple feedback. With lots of points of communication\nabout our team and Primer, we’re growing awareness and adoption\nof design systems.\nSHOW, DON’T TELL\nWe noticed when teams updated the GitHub UI, they would go\nto another part of the website and literally copy and paste the\nmarkup and CSS. Refactoring away old instances of patterns is\nour best fight against the continued reuse of old patterns. It is\na long-term initiative, but we can prioritize the most popular and\ntroublesome patterns.\nRESPOND QUICKLY TO SUPPORT REQUESTS\nMost teams at GitHub have an on-call duty rotation called First\nResponder. It means one or more team members are on call to\ntriage issues, respond to support requests, or provide code review.\nAs support requests grew for design systems, we adopted this\nprocess to help respond to people in a timely manner. Over time,\nwe’ve iterated on the process and created a number of automated\n\nscripts that help track notification items that need attention.\nResponding to people quickly increases the likelihood that they\nreact positively to our team and recommendations.\nFigure 4: First responders use a hubot script to see\nwhich items need their attention.\nPRESENCE AND RESPONSIVENESS\nParticularly early on, we made the simple effort to be available\nvia Slack to answer questions, pair on code, or jump on a call to\nwalk through something. It takes time away from deeper work, but\nallocating time to this is worth it to help win friends and champions\non other teams.\nFigure 5: The GitHub Design Systems team are available\nto help in our slack channel.",
+      "metadata": {
+        "section": "Putting Your Design System into Practice",
+        "chunkIndex": 12,
+        "pageRange": "79-106"
+      }
+    },
+    {
+      "id": "dsh-ch04-chunk-013",
+      "text": "Publishing and\ndistribution at scale\nMost of my recent experience working on design systems has been\non large-scale web applications like Etsy and GitHub. The scale to\nwhich those systems need to be distributed and published usually\nrequires more complex infrastructure than a small company with a\nsmall system and small team.\nHowever, many companies intend to grow the size of their team\nand scale of their product over time, so understanding how to set\nyour design system up for scalability will benefit you in the future.\nLet’s walk through methods of style organization, distribution, and\npublic vs. private documentation and code, to help you consider\nwhat’s right for you and your team.\nPackage management and\norganizing modules\nDesign systems should be built for change, large or small. This\nisn’t just important for how you code your system or use things\nlike variables or design tokens—it’s important for how you organize\nmodules, and version, and distribute them too.\nAt GitHub, we iterated on how we organize and package styles\nmultiple times. Like Etsy, we pulled our design system out of the\nGitHub monorepo into its own repo. We wanted to have more\ncontrol over the changes made and when those changes made it\nback into GitHub.com.",
+      "metadata": {
+        "section": "Putting Your Design System into Practice",
+        "chunkIndex": 13,
+        "pageRange": "79-106"
+      }
+    },
+    {
+      "id": "dsh-ch04-chunk-014",
+      "text": "We also use Primer for more websites and applications beyond\nGitHub.com. Conference websites like git-merge.com are built\nwith Primer, as well as community websites such as developer.\nGitHub.com and opensourcefriday.com.\nNot all these sites need the full suite of styles we use for GitHub.\ncom, and GitHub.com doesn’t use all the marketing- oriented\nstyles in the core application. This led to taking a modular approach\nwith style organization and influenced how we packaged and\ndistributed Primer.\nNate Whitson, LinkedIn\nListen online:\nVersioning\nVersioning the entire system\nvs. versioning by module\nVersioning the entire system means everything within the system\nbelongs to just one version number and can only be installed in\nits entirety. This could be likened to browser or software versions.\nWhen you update to a new version of Google Chrome or your\nphone’s OS, for instance, you’re updating the whole piece of\nsoftware in one go.\nIf you were to version your design system in the same way, it would\nmean everything within the design system would be updated too.\nFor example, you may have updated your font styles, added a new\nnavigation component, or deprecated an old grid layout. When\na user of your design system chooses to upgrade, they get all",
+      "metadata": {
+        "section": "Putting Your Design System into Practice",
+        "chunkIndex": 14,
+        "pageRange": "79-106"
+      }
+    },
+    {
+      "id": "dsh-ch04-chunk-015",
+      "text": "of those changes together. This still gives teams the flexibility of\nwhen to update the system, but a more granular approach can be\nhelpful as your system scales.\nVersioning individual modules means having a version number\nfor every component or group of styles within the design system.\nSo if you put your button component into one module and your\nutility styles into another, they would each have their own version\nnumber, such as primer-buttons@2.4.0 and primer-utilities@2.8.0.\nYou can still maintain a package that includes the entire set of\nthe modules and version that too. For example, primer-css@9.5.0\nincludes primer-buttons, primer-utilities, and all the other Primer\nmodules. So you can provide the best of both worlds—the option\nto use the entire system, or just use individual modules.\nThis modular versioning approach does require more effort for initial\nsetup because you need to work out what to boil each module down\nto. For instance, should you have a module for layout utilities as well\nas a grid system, or combine them all into one layout module?\nThe benefit of this approach is that users of your design system\ncan choose to upgrade just the bits they need. Giving teams the\noption to selectively update when they have the time to do it can\nmean they’re more likely to iteratively keep up to date—whereas\nthe overhead of updating the entire system in one go can act as a\nbarrier.\nVersioning by package enables a design systems team to push\nupdates more frequently without the pressure of forcing an update\nto the entire system.\nCompared with versioning the entire system in one go, versioning\nby module creates more flexibility around major design systems",
+      "metadata": {
+        "section": "Putting Your Design System into Practice",
+        "chunkIndex": 15,
+        "pageRange": "79-106"
+      }
+    },
+    {
+      "id": "dsh-ch04-chunk-016",
+      "text": "releases, can lead to a culture of continuous development, and\nenable your systems team to move faster overall.\nReleases, branches, and version numbers\nDesign system teams often have to balance competing priorities.\nAttending to bug fixes or other commitments has to be balanced\nwith intensive projects requiring more research and planning, such\nas developing a new color system or bringing in a newly supported\nfeature like a CSS grid.\nYour publishing workflow needs to work for both the users and\nthe maintainers of the design system. Maintainers want to have\nconfidence in what they test and ship. Users of the system want\nto have clarity on status and what type of updates they’re getting.\nAt GitHub, we found the combination of versioning and organizing\nreleases with Git branches gave us the right amount of flexibility in\nplanning and shipping new design system releases.",
+      "metadata": {
+        "section": "Putting Your Design System into Practice",
+        "chunkIndex": 16,
+        "pageRange": "79-106"
+      }
+    },
+    {
+      "id": "dsh-ch04-chunk-017",
+      "text": "Figure 6: Tracking multiple Primer releases with GitHub\nProject boards.\nWe maintain a “dev” branch that includes work in progress and\ncreates a new branch for each individual release. Since Git allows\nus to create multiple branches of the design systems code, we\ncan work on a minor or patch release at the same time as a major\nrelease. This means we can take our time with a major release\nthat might include breaking changes, while also shipping timely\nupdates and bug fixes in minor and patch releases.\nVersioning our system and using Semver makes this workflow\npossible. We can clearly point to a specific version number for each\nrelease, and know by the Semver system what type of updates are\nincluded with it, and therefore what type of testing we need to do.\nSince Semver is a well-recognized standard for versioning, it helps\nclearly communicate to users of Primer—internally at GitHub or\nexternally—what updates they’re getting and\nwhat type of testing they may need to do in\norder to use the updates.\nNate Whitson, LinkedIn\nListen online:\nBuilding a Public vs. a Private System\nPublic vs. private\nAs your system and its number of users grow, you might find\nyourself considering whether to make your design system public",
+      "metadata": {
+        "section": "Putting Your Design System into Practice",
+        "chunkIndex": 17,
+        "pageRange": "79-106"
+      }
+    },
+    {
+      "id": "dsh-ch04-chunk-018",
+      "text": "to some degree. There isn’t a one-size-fits-all solution to this—it\nshould be based on what’s right for your team. Making a system\npublic doesn’t have to be an all-or-nothing approach, there are\nmultiple ways of breaking down what’s public.\nMany pioneering teams have created and published beautifully\ndesigned documentation, such as Material Design, Lightning\nDesign System, and Shopify’s Polaris. We shouldn’t assume the\nsolution that worked for these companies is right for everyone else.\nThese are companies making a significant investment in design\nsystems. Plus, they have the broader objective of wanting external\ndevelopers to use these systems to build on their platform.\nWhen deciding what, if anything, is made public, you should\nprioritize based on your company’s needs, rather than standards\nset by other companies.\nHere are a few ways you can make\nyour design system public:\nPUBLIC DOCUMENTATION ONLY\nYou might decide that making the source code public isn’t right for\nyour team, but you want to make the documentation public.\nMarvel’s style guide and MailChimp’s patterns are examples of\npublic documentation sites that don’t (yet) share their source\ncode.\nOPEN-SOURCE DESIGN SYSTEMS\nMany companies open-source their design system. This means\nthe general public can open issues to request new features,",
+      "metadata": {
+        "section": "Putting Your Design System into Practice",
+        "chunkIndex": 18,
+        "pageRange": "79-106"
+      }
+    },
+    {
+      "id": "dsh-ch04-chunk-019",
+      "text": "give feedback, or let the maintainers know of bugs. Maintainers\ncan also choose to accept contributions in the form of code or\ndocumentation changes via pull requests. If the maintainers\nchoose, they can make the design system available for modification\nand reuse by adding a license.\nThe US Web Standards, Primer, Help Scout, and Solid are all\nexamples of design systems open-sourced on Github.com.\nFigure 7: Buzzfeed’s design system, Solid, is open-\nsourced on GitHub.\nOPEN-SOURCE THE DOCS WITH YOUR CODE ON GITHUB\nYou don’t necessarily have to share a crafted documentation\nwebsite—you can just share documentation written in markdown\nformat and it will be rendered and styled on GitHub. Another\noption is to publish the docs via GitHub pages. This can be a\nlow-barrier way to share documentation since GitHub hosts the\ndocumentation, giving you a default public URL if you don’t add a\ncustom domain.\n\nSHARE A ZIP FILE TO DOWNLOAD\nIf you want to keep the source-code and/or the npm packages\nprivate, you could choose to share the code for your design\nsystem so it can be used by others. This might be a nice option if\nyou don’t want to make in-progress work on your system public, or\nadd the overhead of managing open-source contributions, but are\nstill happy to share the code for use by others.\nProjects like Lab by Compositor (a design tool for creating React\ncomponents for design systems) use the Releases feature on\nGitHub to share release notes and a ZIP file download of the\nsoftware. They also use the repo to host documentation and\nissues to get feedback from users.\nFigure 8: Color swatches in Storybook.\nPUBLISH A STORYBOOK OF YOUR UI COMPONENTS\nStorybook has become a popular tool for design systems teams,\nespecially for those using React, though it can also be used with",
+      "metadata": {
+        "section": "Putting Your Design System into Practice",
+        "chunkIndex": 19,
+        "pageRange": "79-106"
+      }
+    },
+    {
+      "id": "dsh-ch04-chunk-020",
+      "text": "Sass or CSS-based design systems too. As Brad Frost describes,\nStorybook is a “workshop” tool designed to output rendered\nexamples of your styles and components, which you can use in\ndevelopment for testing changes. Style guide documentation is\nyour “storefront” and includes crafted and detailed documentation\nwith information like usage guidelines and code-style principles.\nFigure 9: Notification styles in Storybook.\nProviding rendered examples of your components, even without\ndetailed documentation, is still very useful to users, maintainers,\nand would-be contributors of your design system. It provides a\ncatalog of what’s included in your design system.\nPattern Lab (created by Brad Frost), Fractal, and React styleguidist\nare other tools that provide similar features to Storybook with\noptions for documentation and code examples. All these tools can\nbe used without sharing your design system’s source code, and\ngive you options as to what level of documentation you share.",
+      "metadata": {
+        "section": "Putting Your Design System into Practice",
+        "chunkIndex": 20,
+        "pageRange": "79-106"
+      }
+    },
+    {
+      "id": "dsh-ch04-chunk-021",
+      "text": "As you consider varying degrees of access\nto your system, also consider some of the\nreasons teams make their systems public:\nNO AUTHENTICATION BARRIERS TO SHARING\nAnything behind authentication, like outside VPNs or firewalls,\nmeans one more barrier to access. I know this firsthand since\nwe have a new, in-progress documentation site for Primer that\nrequires staff login. People frequently think the style guide had\nbeen taken down or don’t even know it exists.\nAuthentication also makes it difficult to give external contractors\naccess. It’s a small barrier, but it can have a negative impact\nand mean people who could be using your design system\ndocumentation can’t or won’t because it’s too much hassle.\nHELPS WITH RECRUITING THROUGH\nPREVIEWING DESIGN MATURITY\nDesign systems are a popular topic in the design and front- end\ncommunity right now and might be part of a prospect’s decision to\nchoose one company over another.\nDesign systems can be a sign of maturity for a team, and also\nprovide insight into what it might be like to work at that company.\nEspecially if you’re trying to recruit directly for your design systems\nteam, making the documentation public is an obvious way to\nattract people and set expectations.",
+      "metadata": {
+        "section": "Putting Your Design System into Practice",
+        "chunkIndex": 21,
+        "pageRange": "79-106"
+      }
+    },
+    {
+      "id": "dsh-ch04-chunk-022",
+      "text": "OPENS YOU UP FOR INPUT FROM THE COMMUNITY\nMaking your documentation and/or your source-code public opens\nyou up to external contributions, whether via simple feedback\ncomments or direct contributions to code. This risks overhead,\nparticularly if your system becomes popular, but the benefit is that\nyou get feedback and insights from a wider range of people.\nPrimer is open-sourced on GitHub. We’ve been increasingly working\nin the open and sharing issues and pull requests so people can see\nhow we work. We’ve noticed a gradual increase in contributions\nfrom the community and internal GitHub contributors. People\ngenerally feel proud to contribute to an open-source project that\ncan benefit anyone.\nConclusion\nThere’s a lot that goes into the rollout of your design system, and\nmuch of it will extend naturally from how you decide to build your\nsystem, who you’re working with, and the best way to spread\nadoption inside your company.\nCreating a perfect rollout strategy is less important than ensuring\nyou’re involving the right people, being clear about your end goals\nand how your strategy supports those, and documenting your plan\nmethodically through each step.\nDesign systems are always evolving, and the way you share and\nencourage adoption of new iterations will evolve along the way as\nwell. An intentional, thoughtful strategy with room to scale will go\na long way to making sure adoption is treated as a crucial part of\nthe building process.\n\nFurther reading\n01. A successful Git branching model\n02. The workshop and the storefront\n03. Maintaining Design Systems",
+      "metadata": {
+        "section": "Putting Your Design System into Practice",
+        "chunkIndex": 22,
+        "pageRange": "79-106"
+      }
+    }
+  ],
+  "metadata": {
+    "category": "architecture",
+    "tags": [
+      "adoption",
+      "rollout",
+      "team",
+      "governance",
+      "process",
+      "handbook",
+      "designbetter",
+      "smashingmagazine"
+    ],
+    "confidence": "high",
+    "system": "Design Systems Handbook",
+    "authors": "Marco Suarez, Jina Anne, Katie Sylor-Miller, Diana Mounter, Roy Stanfield",
+    "publisher": "DesignBetter.Co by InVision",
+    "year": "2017",
+    "chapter": "04",
+    "last_updated": "2025-03-26T00:00:00Z"
+  }
+}

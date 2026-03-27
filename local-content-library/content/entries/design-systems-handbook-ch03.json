@@ -1,0 +1,212 @@
+{
+  "id": "design-systems-handbook-ch03",
+  "title": "Design Systems Handbook — Chapter 03: Building Your Design System",
+  "source": {
+    "type": "pdf",
+    "location": "Designsystemshandbook.pdf",
+    "ingested_at": "2025-03-26T00:00:00Z"
+  },
+  "content": "Chapter — 03\nBuilding your\ndesign system\nA strong foundation\nBy Katie Sylor-Miller\n\nModern design systems are the result of many years of evolution in\nthe way we write front-end code. When I started my career, most\nsites were built with single-use, inefficient, fragile, and inconsistent\nfront-end codebases. Through hard- won experience and many\nyears of collaboration and iteration, front-end developers have\nestablished more sophisticated practices for writing and organizing\nour code. Now, there ...",
+  "chunks": [
+    {
+      "id": "dsh-ch03-chunk-000",
+      "text": "Chapter — 03\nBuilding your\ndesign system\nA strong foundation\nBy Katie Sylor-Miller\n\nModern design systems are the result of many years of evolution in\nthe way we write front-end code. When I started my career, most\nsites were built with single-use, inefficient, fragile, and inconsistent\nfront-end codebases. Through hard- won experience and many\nyears of collaboration and iteration, front-end developers have\nestablished more sophisticated practices for writing and organizing\nour code. Now, there is an explosion of front-end frameworks and\ntooling to help you write better, more maintainable HTML, CSS,\nand JavaScript.\nThis represents an exciting paradigm shift in front-end development,\nbut the number of choices available can be overwhelming.\nA cursory glance at the table of contents for “Cody Lindley’s\nFront End Developer Handbook 2017’s section on tools” reveals\na bewildering array of considerations. I couldn’t possibly cover\nall of the technology choices available—the factors that go into\nyour decision-making will be largely situational, and this is only a\nchapter!\nInstead, I’ll save you the headache of attending the school of hard\nknocks by walking you through what I’ve learned from building\nand contributing to 3 different design systems. First, I’ll cover the\ntechnology-agnostic foundational principles that should guide\nthe development of your design system. Then, I’ll focus on some\ncommon pitfalls and how you can avoid falling prey to them.\nThroughout, I’ll introduce you to some of the tools that will help\nyou along the way, but remember this: Your technical approach\ndoesn’t matter as much as creating a living, breathing system\nthat’s flexible, maintainable, stable, scalable, and successful in the\nlong-term.",
+      "metadata": {
+        "section": "Building Your Design System",
+        "chunkIndex": 0,
+        "pageRange": "51-78"
+      }
+    },
+    {
+      "id": "dsh-ch03-chunk-001",
+      "text": "Foundations\nRegardless of the technologies and tools behind them, a successful\ndesign system follows these guiding principles:\nÒ It’s consistent. The way components are built and managed\nfollows a predictable pattern.\nÒ It’s self-contained. Your design system is treated as a\nstandalone dependency.\nÒ It’s reusable. You’ve built components so they can be\nreused in many contexts.\nÒ It’s accessible. Applications built with your design system\nare usable by as many people as possible, no matter how\nthey access the web.\nÒ It’s robust. No matter the product or platform to which your\ndesign system is applied, it should perform with grace and\nminimal bugs.\nLet’s take a look at each of these principles in more detail.\nConsistency\nYour first, most important task when starting out is to define the\nrules of your system, document them, and ensure that everyone\nfollows them. When you have clearly documented code standards\nand best practices in place, designers and developers from across\nyour organization can easily use and, more importantly, contribute\nto your design system.",
+      "metadata": {
+        "section": "Building Your Design System",
+        "chunkIndex": 1,
+        "pageRange": "51-78"
+      }
+    },
+    {
+      "id": "dsh-ch03-chunk-002",
+      "text": "Code style guides\nCode style guides provide the grammar rules of syntax and\nsemantics for your code. Code syntax is the set of rules for\nstructuring and formatting your code (e.g. curly braces always go\non a new line). Code semantics provide the rules for making your\ncode understandable (e.g. alphabetize CSS property declarations).\nBut don’t get bogged down fighting pointless wars over tabs versus\nspaces. The most important thing is to end up with consistently\nwritten code, not to achieve theoretical perfection!\nAutomating code style\nTo enforce your code standards and achieve consistency in your\nsystem, help your contributors write code that follows the rules\nthrough linting and tooling.\nPRO TIP — Front-end guidelines questionnaire\nUnsure where to start making decisions about your technical\napproach? Brad Frost has written a handy Frontend\nGuidelines Questionnaire to guide you.\nPRO TIP — A starting point for code style\nStart with an open source code style guide—I prefer Airbnb’s\n“Mostly Reasonable” rules for CSS, JavaScript, and React—\nthen modify it to fit your needs. Be sure to include your team’s\ncode style rules in your design system’s documentation.",
+      "metadata": {
+        "section": "Building Your Design System",
+        "chunkIndex": 2,
+        "pageRange": "51-78"
+      }
+    },
+    {
+      "id": "dsh-ch03-chunk-003",
+      "text": "Linting is an automated process of analyzing code and raising\nerrors when code either doesn’t adhere to your syntax rules or\nis broken, buggy, or malformed. Linting tools such as CSSLint\nor StyleLint for CSS, and JSHint or ESLint for JavaScript, can be\nrun manually as part of your local development process, as an\nautomated pre-commit hook before code is checked into source\ncontrol (the best option), or run as part of your build process.\nPRO TIP — Automagically pretty\nYou can stop worrying about writing your JavaScript\naccording to code syntax rules entirely by using Prettier to\nautomatically reformat code without changing the underlying\nfunctionality.\nCode editor configuration\nAn often-overlooked but important corollary to linting is providing\nan Editor Config to enforce code style in your editor(s) of choice.\nEditorConfig.org (figure 1) provides a cross- platform format to\ndefine stylistic rules for most code editors and IDEs, so you can\nautomatically convert your tabs into spaces—thus ending the tabs\nversus spaces war!\n\nFigure 1: Example .editorconfig file from EditorConfig.\norg\nSelf-contained\nYour design system should live in a source control repository\nindependent from your main codebase. Although it will require\nmore work to get up and running, a separate repository brings\nmany long-term benefits:\nÒ It enables versioned releases of your code (more on this\nlater)\nÒ It allows you to share code across multiple teams, products,\nand codebases\nÒ It forces you to develop components in isolation so they’re\nnot tied to a single use case\nÒ It provides infrastructure for a robust front-end testing\narchitecture\nÒ It forms a foundation for a living style guide website",
+      "metadata": {
+        "section": "Building Your Design System",
+        "chunkIndex": 3,
+        "pageRange": "51-78"
+      }
+    },
+    {
+      "id": "dsh-ch03-chunk-004",
+      "text": "A standalone design system repository functions as a single\nsource of truth. There is only one place where components\nare defined, which then gets shared into other codebases as a\ndiscrete dependency. Because all usages point back to a canonical\nimplementation, changes in a single place propagate through the\nentire system.\nIdeally, all of the code for each component within your system is\nco-located: CSS, JavaScript, HTML templates, and documentation\nall live in the same place, possibly the same directory. If you’re\nusing React with CSS-in-JS, each component may even be\nencapsulated in a single file. The closer the pieces are to each\nother, the easier it is to trace and manage dependencies between\nbits of code, and the easier it will be to update and maintain.\nReusable\nSuccessful design systems are highly reusable. Bootstrap, the\nmost-used front-end library of all time, powers hundreds (if not\nthousands) of websites because it was architected with reusability\nin mind. Writing components to be reused in multiple contexts\nis vitally important, yet hard to do well— make components too\nfocused for a single use case or too inflexible, and users will end\nup creating their own patterns.\nTo be reusable and scalable, patterns need to be modular,\ncomposable, generic, and flexible.\nÒ Modular components are self-contained with no\ndependencies",
+      "metadata": {
+        "section": "Building Your Design System",
+        "chunkIndex": 4,
+        "pageRange": "51-78"
+      }
+    },
+    {
+      "id": "dsh-ch03-chunk-005",
+      "text": "Ò Composable components can be combined to create new\npatterns\nÒ Generic components can handle multiple use cases\nÒ Flexible components can be tweaked and extended to\nwork in a variety of contexts\nPRO TIP — Stay DRY\nA fundamental best practice in software development is\nDon’t Repeat Yourself (DRY). When two different pieces of\ncode perform the same function, you double the possibility of\nbugs, unintended side effects, and the amount of time spent\nmaintaining functionality. The goal of your design system\nis to DRY up your development and reduce duplication by\ncreating reusable patterns.\nModular CSS architecture\nReusability and scalability in design systems begin with taking a\nmodular approach to your code architecture. CSS, however, is not\ninherently modular. So over time, systems like SMACSS, OOCSS,\nand BEM have added structure and modularity to CSS. More\nrecently, CSS-in-JS approaches such as Styled Components have\nsolved the problem by defining CSS properties in JavaScript code\nstructures.\nWhether you use one of these systems or roll with your own, the\nfundamentals of any good CSS architecture are the same:\nÒ It has clear naming conventions for components, variations,\nand utilities",
+      "metadata": {
+        "section": "Building Your Design System",
+        "chunkIndex": 5,
+        "pageRange": "51-78"
+      }
+    },
+    {
+      "id": "dsh-ch03-chunk-006",
+      "text": "Ò It’s tightly-scoped and has low-specificity CSS that limits\nunintentional side effects\nÒ It has utility classes that allow you to modify styles in a\nmanaged way\nÒ It has rules for building modular, composable, generic, and\nflexible components\n“The Web is fundamentally designed to work for all people,\nwhatever their hardware, software, language, culture,\nlocation, or physical or mental ability. When the Web meets\nthis goal, it is accessible to people with a diverse range of\nhearing, movement, sight, and cognitive ability.”\nWEB ACCESSIBILITY INITIATIVE ( WAI)\nW3C\nTo learn more about architecting CSS so that it meets these\ncriteria, I highly recommend Harry Roberts’ https://CSSguidelin.es/\nthen adding this type of documentation to your system.\nPRO TIP — Namespacing\nWorking with legacy code? Choose a unique, short, and simple\nnamespace to prefix your classes, e.g. `.ds-[component\nname]`. This will avoid class collisions when mixing multiple\nlibraries on a page, and ensure you know that your `.ds-btn`\nclass is different from the `.btn` class from Bootstrap.",
+      "metadata": {
+        "section": "Building Your Design System",
+        "chunkIndex": 6,
+        "pageRange": "51-78"
+      }
+    },
+    {
+      "id": "dsh-ch03-chunk-007",
+      "text": "Accessible\nFor too long, accessibility, or a11y, has been misunderstood\nas building sites for a small group of users of assistive\ntechnology—a blind person using a screen reader—and far\ntoo often dismissed as too complex, too time-consuming,\nor “not our customers.” Accessibility, however, is not just\nfor a single, small group, but for an estimated 15% of people\nworldwide—56.7 million people in America alone—with a wide\nspectrum of permanent or temporary visual, auditory, motor,\nand cognitive impairments.\n[Accessibility testing] gives developers a\nstarting point to say ‘here are some errors\nthat I have tangible ways to go fix now.\nAlicia SEDLOCK — Front-End Engineer\n& Accessibility Advocate\nThankfully these attitudes are changing and our industry is\nembracing a more inclusive definition of accessibility. Making your\nsite accessible to users with disabilities improves the experience\nfor everyone who visits your site. If that isn’t enough motivation,\nimproving your site’s accessibility can help improve SEO, and it’s\nbecoming increasingly more important from a legal standpoint to\navoid costly lawsuits.\nIn a landmark case against the grocery chain Winn-Dixie, a federal\njudge ruled that websites are subject to the provisions of the\nAmericans with Disabilities Act (ADA). If you’re just learning about\naccessibility, there are a lot of resources to help you get started.",
+      "metadata": {
+        "section": "Building Your Design System",
+        "chunkIndex": 7,
+        "pageRange": "51-78"
+      }
+    },
+    {
+      "id": "dsh-ch03-chunk-008",
+      "text": "I recommend reading the introductory articles from the W3C’s Web\nAccessibility Initiative (WAI) WebAIM, and the A11y Project. You\ncan inspect the current state of your site using Tota11y, an a11y\nvisualizer bookmarklet by Khan Academy. Starting an accessibility\npractice where none has existed before can be challenging, but\nwhen you leverage your design system, it’s easier than you might\nthink.\nEnforce a11y with your design system\nTo ensure everyone at your organization builds accessible sites,\nfeatures, and apps, enforce accessibility best practices in your\ndesign system code.\nÒ Test your color usage against established color contrast\nguidelines (figure 2).\nÒ Build components to be keyboard and screen reader\naccessible by default. The Ebay Accessibility MIND\npattern library is an amazing, thorough resource to help\nguide development of accessible components and best\npractices. Encourage contributors to build according to\nthese guidelines and test their code using keyboard-only\nnavigation and assistive technology devices like screen\nreaders.\nÒ Include in your documentation code standards and\nguidelines for common a11y best practices such as using\nlarger, legible text sizes, always associating a form field with\na label, and properly adding alt text attributes to images,\nto name a few. Salesforce’s Lightning design system\nand Shopify’s Polaris are great examples of accessibility\nguidelines in practice.",
+      "metadata": {
+        "section": "Building Your Design System",
+        "chunkIndex": 8,
+        "pageRange": "51-78"
+      }
+    },
+    {
+      "id": "dsh-ch03-chunk-009",
+      "text": "Jesse Bennett-Chamberlain Shopify\nListen Online\nImplementing And Rolling Out Polaris\nThese accessible practices improve usability for everyone by\nmaking it easier to view, interact with, and navigate a site, improving\nform completion rates and reducing user mistakes.\nFigure 2: Eight Shapes Contrast Grid allows you to test\ncolor combinations for compliance with color contrast\nguidelines.\nUse the power of your single source of truth to create a foundation\nfor accessibility, thus relieving some of the burdens from product\nteams. It’s much easier to build in accessibility from the start than\nto bolt it on after a feature has been designed and built.\n\nNate Whitson, LinkedIn\nListen Online: Accessibility\nRobust\nA robust design system has a strong foundation of tests behind\nit. Testing provides confidence in your code, which facilitates\nadoption. Users will know that they can upgrade or change their\nUI without it breaking in unexpected ways.\nAdditionally, your design system is uniquely positioned to form a\nfoundation for robustly testing your front-end code.\nI like to think about it almost like…there’s an\nimplicit contract that this is always going to\nwork.\nAlicia SEDLOCK — Front-End Engineer\n& Accessibility Advocate",
+      "metadata": {
+        "section": "Building Your Design System",
+        "chunkIndex": 9,
+        "pageRange": "51-78"
+      }
+    },
+    {
+      "id": "dsh-ch03-chunk-010",
+      "text": "Test your design system instead\nof your complicated UI\nKeeping tests up to date for pages, applications, and features—\nespecially on a rapidly changing site or one with heavy\nexperimentation—requires a lot of work. Tests get out of date\nquickly! You can narrow the scope of your tests and gain higher\nlevels of confidence in your site-wide front-end code by heavily\ntesting your design system components. You already need to\ngenerate example code for the different states of each component\nfor your documentation—use those as your test fixtures.\nTypes of tests\nThere are 4 types of tests used for ensuring stability in your design\nsystem:\nÒ Unit testing: These tests verify that small units of\ncode (usually individual JavaScript functions) behave\nas expected. Unit tests execute functions with a set\nof predefined inputs, then verify that they return the\nexpected output. Some popular frameworks to use are\nMocha, Jasmine, and Jest.\nÒ Functional testing: In functional tests, examples of your\ncode, or “fixtures” are run in a virtual “headless” browser,\nthen tested by performing simulated user actions, and\nchecking the new state of the browser for the expected\nresult of those actions. Functional testing frameworks\ninclude Nightwatch, Protractor, and Casper.\nÒ Visual regression testing: These tests help catch\nunintended visual changes to component styles. The\ntest framework takes screenshots of your fixtures both",
+      "metadata": {
+        "section": "Building Your Design System",
+        "chunkIndex": 10,
+        "pageRange": "51-78"
+      }
+    },
+    {
+      "id": "dsh-ch03-chunk-011",
+      "text": "before and after the changes, then compares them using\nan algorithm to detect visual differences. There are open\nsource frameworks like Wraith, Gemini, and BackstopJS,\nas well as paid services like Applitools and Percy.io. Go\nto Kevin Lamping’s excellent resource Visual Regression\nTesting for more information and options.\nÒ Automated accessibility testing: Leverage tooling to\nensure that your components are accessible. Some options\nfor running automated a11y audits are Paypal’s AATT and\na11y by Addy Osmani, and aXe by Deque Systems.\nJesse Bennett-Chamberlain, Shopify\nListen online:\nChallenges Implementing Polaris\n\nCommon challenges\nNo system is ever perfect. You will make decisions that you later\nregret, no matter how much time you put into designing your\ndesign system. You can, however, anticipate issues that arise as\nyour system grows, and work to avoid or mitigate their effect on\nyour project. There are 3 common challenges I’ve seen arise in\nmultiple design systems:\nÒ Keeping documentation up-to-date with your system code\nÒ Handling breaking changes\nÒ Avoiding performance degradations\nÒ Let’s look at each of these concerns in detail.\nMaintaining documentation\nThe first time I built a front-end component library, my team\ndecided it would be easier to create a documentation website\nwith a codebase separate from our application. In hindsight,\nthis decision broke the cardinal rule of Don’t Repeat Yourself.\nWhenever a component changed in our main codebase, we had\nto remember to actually update the documentation, then do\nthe tedious work of duplicating the changed code in 2 different\ncodebases. Unsurprisingly, our documentation got out of date\nalmost immediately!\nLearn from our mistakes by reducing the distance between your\ndocumentation and code and using automation.",
+      "metadata": {
+        "section": "Building Your Design System",
+        "chunkIndex": 11,
+        "pageRange": "51-78"
+      }
+    },
+    {
+      "id": "dsh-ch03-chunk-012",
+      "text": "Minimize separation between library\ncode and documentation code\nEarlier in the chapter, we discussed storing your design system\ncode in a separate repository that functions as your single source\nof truth. When documentation and code are co-located, it’s more\nlikely that you’ll remember to update the documentation when a\ncomponent changes. Consider adding a pre-commit hook to your\ndesign system repository to warn contributors when their code\nadjustments don’t also contain updated documentation files.\nFigure 3: IBM’s Carbon design system co-locates each\ncomponent’s CSS, JavaScript, documentation, and\nexample HTML, which functions as both documentation\nexamples and test fixtures.\nAutomate documentation\nStart by documenting your system using simple, human- readable\nfiles written in markdown, co-located with each component.\nGithub is already configured to render and display any file named",
+      "metadata": {
+        "section": "Building Your Design System",
+        "chunkIndex": 12,
+        "pageRange": "51-78"
+      }
+    },
+    {
+      "id": "dsh-ch03-chunk-013",
+      "text": "README.md when you’re viewing a folder’s contents—you might\nnot need a flashy website at all!\nIf and when you do decide to create a full-featured documentation\nwebsite, use automation to simplify the process. Instead of creating\na new codebase for a separate website, use a tool that will auto-\ngenerate documentation for you—there are lots to choose from—\nreducing the amount of structural HTML you need to write and\nmaintain.\nPRO TIP — Cupper\nHeydon Pickering of the Paciello Group has open-sourced\nCupper, a documentation builder that creates fully accessible\ndocumentation. It’s a progressive web application (PWA)\nunder the hood, so you can save and view content offline on\nsupported devices.\nPRO TIP — Reducing Your CSS Payload\nConsider running automated process to help reduce your\nCSS payload, then use that information to decide which\ncomponents belong in your core file. UnCSS (https://dbtr.co/\nunCSS) removes unused selectors from your CSS and outputs\na new, reduced file. Another approach is to automatically\ndetermine the CSS necessary to render critical, above the\nfold content, and embed that in the head of your page to\nimprove render speed. Addy Osmani has compiled a helpful\nlist of Critical path CSS tools (https://dbtr.co/critical-CSS).\n\nFigure 4: The Cupper pattern library builder\ngenerates fully accessible documentation\nwebsites (formerly called Infusion Pattern\nLibrary Builder).\nHandling change\nAs adoption grows and your design system becomes more widely\nused, you will invariably realize that you didn’t get it all right the\nfirst time, and you will need a plan to handle breaking changes.\nA breaking change is a situation where necessary changes to a\ncomponent’s code will break existing usages of that component\nor class. The Morningstar design system provides guidance\nto contributors on what is considered a breaking change. If\nmishandled, breaking changes can be a major pain point for your\nusers.",
+      "metadata": {
+        "section": "Building Your Design System",
+        "chunkIndex": 13,
+        "pageRange": "51-78"
+      }
+    },
+    {
+      "id": "dsh-ch03-chunk-014",
+      "text": "The wrong way: duplication\nInitially, all of the CSS and JavaScript for Etsy’s Web Toolkit lived\nin the same monorepo with the rest of the team’s site code. This\nmeant that whenever someone made a breaking change to a\ncomponent, their commit making the change had to also contain\nfixes and updates for every single usage of that component. At\nfirst, when just a small team built and used the system on a subset\nof pages, finding and making these changes was relatively easy.\nBut as adoption spread throughout the company, this quickly\nbecame unmanageable.\nIt became such a headache to make major structural changes to\nexisting components that our team at Etsy started to duplicate\nand deprecate—when we refactored our Tab component to make\nit fully accessible, we created a new component named “Tabs2,”\nand deprecated “Tabs” in the hopes that teams would take on the\nwork to upgrade their code. But without clear guidance on how,\nwhy, and a timeline stating when to upgrade, most uses haven’t\nbeen updated to use the new component. This kind of duplication\nis a code maintenance nightmare.\nThe right way: versioning\nBreaking changes are easier to manage if you store your design\nsystem code in its own source control repository. This gives you\nthe ability to do versioned releases of your code, which can be\nshared with other projects. Git allows you to tag a commit with\na release version number, and package managers like npm and\nYarn allow you to package up and publish multiple versions of your\ndesign system code.\n\nFigure 5: Example package.json, the package definition\nfile format for npm.\nWith versioned releases, the adopters that integrate your design\nsystem code can target a specific version as a dependency and\ncontrol when and how upgrades to new versions are handled.\nMake sure to publish release notes detailing changes so other\nteams can learn how upgrades will impact their codebase and\nbetter plan for upgrade work in their project timelines.",
+      "metadata": {
+        "section": "Building Your Design System",
+        "chunkIndex": 14,
+        "pageRange": "51-78"
+      }
+    },
+    {
+      "id": "dsh-ch03-chunk-015",
+      "text": "PRO TIP — Using semver\nMany versioned projects use semver, short for semantic\nversioning, to distinguish between types of releases. Semver\nuses 3 integers separated by dots to indicate major.minor.\npatch versions, for example, v1.2.3.\nÒ Major versions (1.0.0) contain breaking changes from\nprior versions.\nÒ Minor versions (0.1.0) add new functionality that is\nbackward compatible.\nÒ Patches (0.0.1) contain bugfixes for existing functionality\nand are backward compatible.\nÒ Semver adds another layer of confidence that certain\nupgrades should be seamless to users, while others may\nrequire regression testing or code changes.\nAvoiding performance issues\nAs a design system grows over time, generally so does the file size\nof assets sent over the wire on each page. This can negatively\naffect your site’s page load performance, which in turn negatively\naffects your company’s bottom line. Help the products built on\nyour design system avoid performance issues by taking a mobile-\nfirst approach and build your system with modularity in mind.\n\nMobile first\nPoor page load performance will have the largest negative effect\non mobile visits. According to statistics from Google and Akamai,\nmore than half of mobile visitors will abandon pages that take\nlonger than 3 seconds to load, yet the majority of mobile sites\ntake longer than 10 seconds to load. As mobile traffic overtakes\ndesktop, speeding up your page’s performance is more important\nthan ever to give you a competitive edge.\nBuild your design system mobile-first—test early and often on real\ndevices with real hardware and a real network connection so you\ncan understand the experiences of real users.\nFigure 6: WebPageTest performance results for Etsy.\ncom on an iPhone 6 over LTE network.",
+      "metadata": {
+        "section": "Building Your Design System",
+        "chunkIndex": 15,
+        "pageRange": "51-78"
+      }
+    },
+    {
+      "id": "dsh-ch03-chunk-016",
+      "text": "Leverage modularity\nInitially, it made sense to bundle all of the Etsy Web Toolkit\ncomponents and utilities into single files for CSS and JavaScript.\nWhile this is useful for prototyping, it adds unnecessary weight\nto production pages that don’t use all the components. Now,\nwe’re working to avoid performance problems by better using the\nmodularity inherent in the system. To do this, we are:\nÒ Deciding on a set of core components and utilities that are\nmost frequently used. This base file will be included on all\npages that use the design system and can be cached by\nthe browser across page requests to improve load times.\nÒ Ensuring that all components are fully modular with no\ncross-component dependencies (unless they are explicit\nand managed by the system).\nPackaging and sharing the system’s code so that it can be\nconsumed as individual CSS and JavaScript modules added as\ndependencies only when a component is actually used on the\npage. We use an in-house system to define dependencies in our\nfront-end code. Build your design system modules so they work\nwith the dependency manager that your team uses. Webpack is a\npopular option.",
+      "metadata": {
+        "section": "Building Your Design System",
+        "chunkIndex": 16,
+        "pageRange": "51-78"
+      }
+    },
+    {
+      "id": "dsh-ch03-chunk-017",
+      "text": "Forward-thinking\nDesign tokens\nFor most of this chapter, I’ve focused on building design systems\nfor web applications and sites. However, that’s not the full picture.\nModern organizations face unique challenges with their design\nsystems at scale. Today, we build for multiple web and native\nplatforms that need design consistency. Larger organizations\nmay have multiple sub-brands that want the shared support,\nfunctionality, and organization that a design system brings, but\neach needs a different, brand-aligned look and feel. The Salesforce\nUX team introduced a solution to both of these problems: design\ntokens.\nCross-platform sharing\nDesign tokens are a way to abstract design details like colors,\nfonts, rounded corner radius, etc., into a format that can be\nshared across platforms using Salesforce’s Theo tool. Instead of\ndefining your main brand color as a SASS $variable in your web\napp, a UIColor in your iOS app, and a textColor in your Android\napp, you define a single design token in a shared JSON file that\ngets compiled into platform-specific code. Decide to change all of\nyour rounded corners from a 3px to 5px border- radius? Change\nthe value once in your tokens file, and it propagates to all of your\napps automagically.\n\nFigure 7: How design decisions are propagated via\ntokens in design systems.\nMulti-product theming\nYou can also use tokens to “theme” the same structural styling for\nmultiple brands. One brand wants orange buttons and the other\nwants blue? No problem! You can define different token values for\neach brand, then combine each to the same, base CSS to output\nthemed versions of your design system. That way, all of the classes\nare the same, and all of the accessible JavaScript functionality you\nworked so hard to build can be used as-is with no modification for\neach brand.",
+      "metadata": {
+        "section": "Building Your Design System",
+        "chunkIndex": 17,
+        "pageRange": "51-78"
+      }
+    },
+    {
+      "id": "dsh-ch03-chunk-018",
+      "text": "Conclusion\nSystematizing your front-end code benefits everyone in your\norganization: developers move faster, designers don’t have to\nreinvent the wheel, and ultimately, your users have a better\nexperience. But starting out can feel overwhelming!\nThankfully, there is a wealth of resources and a growing community\nof folks sharing their own best practices to help you build your\nsystem. Anna Debenham’s “Styleguide Resources” lists nearly\n500 public design systems/style guides/pattern libraries to use as\ninspiration. While they look and feel very different, each shares\na common goal and is built upon foundational principles that our\nindustry has developed through many years of trial-and-error.\nA flexible, maintainable, stable, scalable, and successful design\nsystem begins with a strong foundation that goes beyond\nframeworks or tooling. If I’ve learned anything in my career, it’s that\nthe only constant in front-end development is change. Chances\nare, within a few years, the technology driving your front-end will\nlook very different than it does right now. If you build for the long-\nterm and plan to handle change, then you can implement new,\nbetter practices as your system grows.\nThat’s not to say you should aim to create another Bootstrap\nright out of the gate. Even if your team can only implement a\nfew of the best practices we’ve discussed in this chapter, it’s still\nworthwhile—some of the techniques I recommend haven’t yet\nbeen implemented in the design system that I work on every day!\nDesign systems are not a one-and-done thing, but a continual\nprocess of iteration and change as we make mistakes, learn from\neach other, and create new and better approaches to front-end\ncode.",
+      "metadata": {
+        "section": "Building Your Design System",
+        "chunkIndex": 18,
+        "pageRange": "51-78"
+      }
+    },
+    {
+      "id": "dsh-ch03-chunk-019",
+      "text": "Further reading\n01. Website Styleguide Resources\n02. Styleguide Driven Development\n03. Styleguide Best Practices\n04. CSS Architecture for Design Systems\n05. Front-end Architecture for Design Systems (book)\n06. Accessibility for Everyone (book)\n07. Web Accessibility Resources\n08. Front-end Performance Checklist\n09. Designing for Performance\n10. Rebuilding Slack.com\n11. Tokens in Design Systems",
+      "metadata": {
+        "section": "Building Your Design System",
+        "chunkIndex": 19,
+        "pageRange": "51-78"
+      }
+    }
+  ],
+  "metadata": {
+    "category": "architecture",
+    "tags": [
+      "implementation",
+      "code",
+      "front-end",
+      "architecture",
+      "components",
+      "handbook",
+      "designbetter",
+      "smashingmagazine"
+    ],
+    "confidence": "high",
+    "system": "Design Systems Handbook",
+    "authors": "Marco Suarez, Jina Anne, Katie Sylor-Miller, Diana Mounter, Roy Stanfield",
+    "publisher": "DesignBetter.Co by InVision",
+    "year": "2017",
+    "chapter": "03",
+    "last_updated": "2025-03-26T00:00:00Z"
+  }
+}

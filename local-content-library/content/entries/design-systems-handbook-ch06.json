@@ -1,0 +1,184 @@
+{
+  "id": "design-systems-handbook-ch06",
+  "title": "Design Systems Handbook — Chapter 06: The Future of Design Systems",
+  "source": {
+    "type": "pdf",
+    "location": "Designsystemshandbook.pdf",
+    "ingested_at": "2025-03-26T00:00:00Z"
+  },
+  "content": "Chapter — 06\nThe future of\ndesign systems\nTo infinity and beyond\nBy Roy Stanfield\n\nI find it exciting to see design systems empower design teams to\nscale and consistently produce solid products, but I know we’re\nonly scratching the surface of our potential. There’s so much more\nwe can accomplish.\nAt Airbnb, we’ve been pondering how we might push our design\nsystem in new directions, and we’re inspired by design- forward\ncompanies that share our desire to craft the future of design\nsystems.\nIn thi...",
+  "chunks": [
+    {
+      "id": "dsh-ch06-chunk-000",
+      "text": "Chapter — 06\nThe future of\ndesign systems\nTo infinity and beyond\nBy Roy Stanfield\n\nI find it exciting to see design systems empower design teams to\nscale and consistently produce solid products, but I know we’re\nonly scratching the surface of our potential. There’s so much more\nwe can accomplish.\nAt Airbnb, we’ve been pondering how we might push our design\nsystem in new directions, and we’re inspired by design- forward\ncompanies that share our desire to craft the future of design\nsystems.\nIn this chapter, I want to introduce you to a new way of thinking\nabout design systems. Design systems can transcend the walls of\na single company to exist as shared standards and customizable\ntooling with help from the open source community, which can\naccelerate development and eliminate the need to start systems\nfrom scratch. If we’re really bold, we could be creating adaptive,\nintelligent systems that are context-aware and compose\nthemselves—reducing our workload and ultimately unlocking AI-\npowered design.\nBut, I’m getting ahead of myself. Let’s start with nuts and bolts.\nBuilding a common foundation\nA designer’s familiarity with the concept of a design system is\nbased on the systems they’ve encountered, what platforms\nthey’ve been tasked to support, and where they’ve worked.\nBooks like this one help us converge on a high-level definition\nfor design systems, but a more rigorous definition will ensure the\nutility and flexibility of our work.",
+      "metadata": {
+        "section": "The Future of Design Systems",
+        "chunkIndex": 0,
+        "pageRange": "123-141"
+      }
+    },
+    {
+      "id": "dsh-ch06-chunk-001",
+      "text": "Finding a standard that supports shared goals will involve\ndecoupling a design system from its implementation, cataloging\ncommon UI and associated states, and more strictly defining\ndesign primitives and components. This could then be expressed\nin a file format that’s able to define a component or design system\nmore completely.\nImagine as if where I built this thing, gravity\nworks one way, and when I install it in your\noffice gravity works another way.\nTim Sheiner — SALESFORCE\nAn example of differing goals\nCurrently, existing systems reflect the specific needs of the\ncompanies that created them. Since each company is building an\nentirely independent system, design system development starts\nfrom scratch—possibly with help from a web toolkit like Bootstrap,\nrelying on the internal knowledge of the team, and only focusing\non top-level needs. As a result, even the best systems contain\nflaws and lack the necessary tooling to speed development and\ntrack results. And if a company’s priorities shift, its design system\nmust shift, causing another section of the design system to be\nbuilt in the same limited way.\nFor example, one of the reasons Airbnb created DLS was to\nminimize and sync differences in UI between our supported\nAndroid, iOS, and web platforms. In The Way We Build, VP of\nDesign Alex Schleifer writes, “Universal and Unified define the\nsystem’s approach we apply when defining patterns. Is it part of a\ngreater whole? Does it work across devices?”",
+      "metadata": {
+        "section": "The Future of Design Systems",
+        "chunkIndex": 1,
+        "pageRange": "123-141"
+      }
+    },
+    {
+      "id": "dsh-ch06-chunk-002",
+      "text": "In our idealized vision, a mockup easily ports between platforms—\ncreating a better design and development experience. This cross-\nplatform UI would give Airbnb guests and hosts alike the same\nend-product experience as if they jumped between mobile app\nand desktop web.\nIn contrast, supporting multiple device platforms was initially less\nof a concern at Etsy, where the main priority was to scale its web\nplatform. During my time there, the team built the web toolkit\nwith the core website as its primary focus. Later, Etsy expanded\nupon its toolkit to support different branding elements for other\ninternal web initiatives. Karyn Campbell describes what it was like\nmodifying the Etsy design system while making Etsy Studio. “While\nwe made a conscious decision to depart in some instances with\nthe etsy.com UI in order to birth this new brand, we also retained\nmany underlying components that our design systems team had\ncreated.”\nA priority at Airbnb was having the same functional and visual voice\nacross platforms. A priority at Etsy was to support multiple web\nproducts with varying brand initiatives. Both were valid needs. A\nshared standard for design systems would need to ensure a solid\nfoundation so that both these and other real- world priorities could\nmore easily be achieved.\nGathering examples of different design system priorities will help\ncreate a checklist to make sure your design system standards\naddress real concerns. Any company adopting these suggested\nstandards could be assured their design system development\nfocuses on immediate company needs, as well as adhering to\nstandards they plug in to a growing body of open source code and\ntools that support most operational transformations that could be\nencountered.",
+      "metadata": {
+        "section": "The Future of Design Systems",
+        "chunkIndex": 2,
+        "pageRange": "123-141"
+      }
+    },
+    {
+      "id": "dsh-ch06-chunk-003",
+      "text": "But what should be in the\ndesign system standard?\nImagine a tool that can specify which design primitives, (e.g.,\nfonts, spacing, color—more on that below), components (and\ntheir states), platforms, and what documentation and testing are\nneeded to have a fully formed design system. The tool would also\nallow the designer to specify which components were not yet\nneeded and which platforms could be added later. With this tool,\na designer would have a framework stating what aspects of the\ndesign system were completed or outstanding. A product manager\ncould export documentation, and a developer could easily export\nUI and UI tests—no longer needing to translate UI from Sketch to\ncode, or from web code to native implementation.\nIf created today, not only would this tool provide industry- wide\nsavings, but it would start to standardize the low-level definition of\na design system. Working backward, let’s now imagine what kind\nof definitions such a tool would need in order to exist.\nFirst, decouple the design system from any specific\nimplementation. We’re not creating React components (nor other\nweb implementations), nor Android UI, iOS UI, or even Sketch\nfiles. Instead, our system is an abstraction that can be deployed\nto any target implementation. We’re going to need a file format\nto describe this abstracted design system. The exported format\ncould be rendered into views by open source modules specific to\neach target implementation.",
+      "metadata": {
+        "section": "The Future of Design Systems",
+        "chunkIndex": 3,
+        "pageRange": "123-141"
+      }
+    },
+    {
+      "id": "dsh-ch06-chunk-004",
+      "text": "Figure 1: Single source of truth concept proposed by the\nDesign Tools team at Airbnb, originally illustrated by Jon\nGold.\nNext, codify the definitions of design primitives and components\nso they are fully expressed in the design system format. Dang, .dsf\nextension is already in use! Guess we’ll have to settle for the .dang\nfile extension!\nDesign primitives are the building blocks of a UI. These include\nspecific predefined colors, fonts, spacings, and more. They\nare foundational visual elements that can be combined into\ncomponents. Changing primitives is echoed throughout a given\ndesign system’s components, and doing so changes the overall\nfeeling of a brand. Additionally, what are components? We’ll also\nneed to codify those. Components are mostly views composed of\ndesign primitives and smaller components whose minimal internal\nlogic is mapped exclusively to state and state change. Benjamin\nWilkins, Design Lead on the Design Tools team at Airbnb, describes",
+      "metadata": {
+        "section": "The Future of Design Systems",
+        "chunkIndex": 4,
+        "pageRange": "123-141"
+      }
+    },
+    {
+      "id": "dsh-ch06-chunk-005",
+      "text": "the difference between primitives and components in minute 7:00\nof his talk, “Thinking in Symbols for Universal Design.”\nNext, we’ll need to catalog all of the common UI components\nin use today. Just as a typeface may have its unique take on\nthe letter “A” (the letter’s visual appearance may vary between\ntypefaces while its meaning is maintained), a .dang file would have\na text input component that varies in visual representation but not\nfunctionality. The catalog will need to group components with\ntheir accompanying states (selected, focus, on-tap, error, etc.)\nand detail interactions to distinguish between mobile, desktop,\nand TV UI.\nWhat are the benefits of this catalog? To start, functional tests\nfor common components could be easily automated through\ncontributions from the open source community. In many cases,\nUI engineers would no longer need to write their own tests.\nThe cataloged components would also enable a marketplace of\nboilerplate design systems that can be installed interchangeably,\nand against which custom UI can be built and substituted. This\nmeans bootstrapping the creation of every design system is no\nlonger necessary.\nLastly, we need to allow for the evolution, growth, and extensibility\nof design systems built upon the shared standard. Just because\nwe’re aware of which components are needed today doesn’t\nmean that we’re able to predict all the elements needed for future\ninnovation. A process for modifying existing components or\ncreating wholly new ones is in order. Thoughtfully standardizing\nour collective knowledge will produce a more consistent user\nexperience, accelerate development, decrease investment needed\nfrom individual companies, and enable open source and collective\ndevelopment of next-generation design tools that conform to\nshared conventions.",
+      "metadata": {
+        "section": "The Future of Design Systems",
+        "chunkIndex": 5,
+        "pageRange": "123-141"
+      }
+    },
+    {
+      "id": "dsh-ch06-chunk-006",
+      "text": "Creating a single\nsource of truth\nThe elements that make up a design system—principles, UI\ncomponents, patterns, and documentation—create the human-\ncomputer interaction layer for our apps. Product designers and\nsystem designers are directly responsible for this layer, and\ntherefore should own the design system and its representation in\nthe codebase.\nThere are two hurdles to achieving a single source of truth. First,\nour current design tools are inadequate. Most only allow us to\nproduce images of UI and prevent designers from achieving\nproduct level fidelity. Second, if the implementation of a design\nsystem is spread across multiple repositories (Android, iOS, React\nNative, React, etc.), collected in a Sketch file, and documented on\na website, then there really is no single codebase to represent a\ntruthful account of the system.\nLacking a single source of truth, the design system—spread out\nover multiple codebases—becomes an amalgam of sources that\neasily fall out of sync.\nOur tools\nDesigners use tools like Sketch, Illustrator, or Photoshop to draw\npictures of UIs, yet these are actually just representations of\ninteractive components that look different, behave differently, and\ncontain different data depending upon the state of the app at a\ngiven time. As Colm Tuite notes in the article “Design tools are\nrunning out of track. Here’s how we can fix them,“ Think of the\nnumber of simple interactions which are commonplace in almost",
+      "metadata": {
+        "section": "The Future of Design Systems",
+        "chunkIndex": 6,
+        "pageRange": "123-141"
+      }
+    },
+    {
+      "id": "dsh-ch06-chunk-007",
+      "text": "all of our products yet cannot be communicated through our\ndesign tools.”\nTuite then mentions interactions and states such as hovering over\na button, focusing an input, checking a checkbox, and identifying\nscroll areas. He points out that our design tools aren’t prompting\ndesigners to think with product level fidelity, and so a designer’s\nwork is usually missing some of its most important details.\n“For each change or addition to the system, a cascade of\nwork is created. Documentation has to be updated, each of\nour apps’ code has to be changed (in Swift, Java, and\nJavaScript), and Sketch templates have to be redrawn.\nThese efforts have to be coordinated, and each source must\nalways be in sync with the others. Code is relatively easy to\ntie together, and we already have an infrastructure that\nallows for version control and continuous integration of our\napplications. Until now though, maintaining Sketch templates\nrelied on manually-intensive human touch points.”\nJon Gold\nAirbnb",
+      "metadata": {
+        "section": "The Future of Design Systems",
+        "chunkIndex": 7,
+        "pageRange": "123-141"
+      }
+    },
+    {
+      "id": "dsh-ch06-chunk-008",
+      "text": "Figure 2: Detail of the Airbnb DLS system Sketch file.\nDLS, UX Platforms, Infrastructure. © Airbnb, Inc.\nSketches of apps are then handed off to developers who have to\ntranslate them into working UI. Between the designer and the 4\ndevelopers that it takes to convert the design into Android, iOS,\nReact Native, and React, it takes 5 different members of the team\nbegin to bring the design up to product- level fidelity. Since the\noriginal sketch was missing details about state and interactions,\na back-and-forth conversation between designer and multiple\ndevelopers is needed to make the designs production-ready. And\nbecause the implementation is coded by 4 different humans, it’s\nlikely that unwanted variation creeps into each implementation.\nFor similar reasons, many designers have focused on sharpening\ntheir coding skills for at least 1 platform. There are many advantages\nto this, but if you’re a systems designer creating components\nfor cross-platform use, coding those components for a single\nimplementation is not yet enough.",
+      "metadata": {
+        "section": "The Future of Design Systems",
+        "chunkIndex": 8,
+        "pageRange": "123-141"
+      }
+    },
+    {
+      "id": "dsh-ch06-chunk-009",
+      "text": "Multiple implementations\nThe attempt to reach a single source of truth is further complicated\nwhen working on cross-platform design systems. Jon Gold\nidentifies places where Airbnb’s DLS workflow could be improved\nin “Painting with Code.”\nAt Airbnb, Gold has taken some exciting first steps toward solving\nthis problem with his project React Sketch.app. With this tool,\nlayered Sketch files can be generated from the React codebase.\nThis means components in the Airbnb React repo, which already\nhave product-level fidelity, can be populated with real data and\nrendered to a Sketch file. It’s another reward for those adventurous\ndesigners willing to learn React!\nIt’s also a touchstone technology, pointing us toward\nunderstanding mockups not as the source of truth, but instead\nas another target for automated output. With these generated\nfiles, we get a clear picture of which components are sitting in the\nrepo. Best of all, a product designer relying on Sketch does not\nhave to change their workflow and can use more accurate files\n(generated by the codebase, not by hand) to compose their work.\nAt last, we can have confidence in how the components look at\nproduct-level fidelity and in how these components behave with\nreal data.\nThe key in making great and growable systems is much more\nto design how its modules communicate rather than what\ntheir internal properties and behaviors should be.\nALAN KAY\nLEGEND",
+      "metadata": {
+        "section": "The Future of Design Systems",
+        "chunkIndex": 9,
+        "pageRange": "123-141"
+      }
+    },
+    {
+      "id": "dsh-ch06-chunk-010",
+      "text": "React Sketch.app is great because it syncs the React and React\nNative repos and Airbnb’s design system Sketch files. But what\nabout the Android and iOS implementations? How can designers\nmake sure these are in sync? React Sketch.app points the way, but\nwe’ll have to go further.\nHere, we can learn from tools and WYSIWYGs of the recent past\nlike Dreamweaver and Interface Builder. Tools in this category\nallow users to combine elements of UI, hook the UI up to data\nand interaction, and then export deployable code. Unfortunately,\nthese software produce code that’s not maintainable by humans,\nand so few companies use them as an official part of their process.\nDid these tools promise too much and deliver too little?\nLuckily, design system components are simple views with minimal\nlogic. Learn more about views and MVC architecture here and\nhere. Unlike the promise of tools like Dreamweaver and Interface\nBuilder, components are easily exported view files that developer\npartners can incorporate into existing workflows.\nSolving two problems with one tool\nTo create a designer-controlled source of truth, we’ll need next-\ngeneration design system tools to enable the composition of\ncomponents and to automate the output of the design system\nto any number of target clients (codebases, vector files, and\ndocumentation sites).\nAs outlined in the section above, if we standardize an export\nformat that contains production-level fidelity for components,\nthen other interpreter modules can be freely built to compile a\nsingle component file into all the various flavors of production\ncode. Then, varied implementations of any given component",
+      "metadata": {
+        "section": "The Future of Design Systems",
+        "chunkIndex": 10,
+        "pageRange": "123-141"
+      }
+    },
+    {
+      "id": "dsh-ch06-chunk-011",
+      "text": "would flow from a single source of truth and would plug right into\nexisting workflows—saving resource-intensive and error- prone\nhuman interpretation of mocked UI. Product designers and design\nsystem designers would finally control the UI they have always\nbeen responsible for.\nAt Airbnb, we’re tackling this challenge in a variety of ways,\nincluding with Lona, our tool for defining design systems and using\nthem to generate cross-platform UI code, Sketch files, images, and\nother artifacts. A highly experimental prototype, Lona represents\nour exploratory approach to discovering what’s next for design at\nscale. Taking a research-based approach to the future of design\nsystems encourages experimentation and collaboration.\nIntelligent systems\ncompose themselves\nIf you’ve not heard of Alan Kay, make sure to look him up. He’s\ncredited with inventing the graphical user interface, Object\nOriented Programming, and—with his concept of the Dynabook—\neven the tablet. Given that design systems fit firmly inside of the\nworld that Kay and his peers built, it’s worth listening to him.\nOnce the magic of design system standards enables both private\nand open source development for cross-platform use, design\nsystems will most likely reach new heights of functionality and\npopularity. Whereas siloed development requires talented people\nto reinvent the design system anew for each employer, standards-\nbased design systems might easily plug into a passionate\ncommunity that will add capabilities to our nascent tools.",
+      "metadata": {
+        "section": "The Future of Design Systems",
+        "chunkIndex": 11,
+        "pageRange": "123-141"
+      }
+    },
+    {
+      "id": "dsh-ch06-chunk-012",
+      "text": "Taking inspiration from Kay and the PARC maxim—“The best way\nto predict the future is to invent it”—I’ll sketch out a stretch goal\nfor the future of design systems and tools in the paragraphs that\nfollow.\nVirtuous cycle—plugging\ninto the feedback loop\nOften, our design systems contain components that aren’t tracked\nin any special way. Without special consideration and considerable\ndevelopment effort, the design systems team is blind to the usage\nstatistics and performance metrics directly associated with the\nsystem. To gain insight into design systems, teams must manually\ntrack which components each product team uses, and then try\nto glean usability information from product team UX research and\nperformance metrics.\nAt Airbnb, we see data from the large proportion of our native\napps, which now use design system components. Connecting\nthese stats to user metrics lets us know which components might\nbe underperforming and deserve special attention.\nSimilar metrics also have an internal benefit. Dashboards\ncontaining usage data aid the internal perception of the system\namong product designers and engineers alike. It’s easy to imagine\nthat tracking the use of a design system can go beyond recording\nend-user impressions (views) and interactions. Even analyzing the\nusage of documentation, design files, and other internal tools can\nlead to insights that better enable product teams.\nBut why should such insights be limited to just a few companies\nwith the resources to create similar tooling? A module could be\nbuilt for just this purpose. It would track where canon components",
+      "metadata": {
+        "section": "The Future of Design Systems",
+        "chunkIndex": 12,
+        "pageRange": "123-141"
+      }
+    },
+    {
+      "id": "dsh-ch06-chunk-013",
+      "text": "are used in product and then apply a flag to that component. These\nflagged components could be polled, and usage stats could come\nstraight back to the design systems team. The insights would then\nbe used to improve internal tools and the system itself.\nLayout aware\nAnother promising direction would be for our components to\nbecome somewhat layout aware, and then declare their intended\nuse to both the system at large as well as sibling components.\nGiven this new super power, design system components could\nnow communicate where they should generally be used and then\nshare information about what types of data they generally contain.\nEven a simplified implementation of this functionality would help\ndesigners instantly swap abstracted data sets to, for instance, see\nhow translation might affect the layout of a particular component\ngiven a longer language like German or a right-to-left language\nlike Arabic.\nThis awareness might even go a step further with a given\ncomponent stating the kinds of screens or interactions preceded\nby its own display, and again which kinds of interactions or screens\nshould follow upon user interaction. This awareness would enable\npredictive assembly.\nPredictive assembly—a pattern tool\nBecause each component now sends messages about where it’s\ntypically used and what type of data it usually contains, we should\nalso be able to see existing components predictively assembled\ninto screens. A future tool might allow the product designer to\nview a particular component, click a randomize button, and see",
+      "metadata": {
+        "section": "The Future of Design Systems",
+        "chunkIndex": 13,
+        "pageRange": "123-141"
+      }
+    },
+    {
+      "id": "dsh-ch06-chunk-014",
+      "text": "the component in situ with other components arranged in an order\nthat more or less semantically makes sense.\nBy allowing designers to up-vote particularly useful component\ngroupings (or patterns), a layout aware tool featuring predictive\nassembly—perhaps better described as a design system pattern\ntool—could become an instrumental way in which product\ndesigners quickly discover repeatable patterns in the system. With\njust a single click, a designer would be able to compose an effective\nsolution made of many components and export the basic design\nfor any project. Moreover, with the advent of standardization,\ndesign systems could become plug-and-play with compositions\ncomposed by predictive assembly, allowing for a quick way to\nassess the integrity of a given design system.\nPredictive assembly would enable the product manager, developer,\nor product designer to provide a set of data and ask for a menu\nof pre-assembled screens that display the data. We could then\nchoose the best option, only correcting the layout if needed.\nIt’s worth noting that if we get particularly good at predictive\nassembly and consult the right minds to take it further, we will\nsoon find ourselves in a world where machine learning provides\nartificial intelligence for plug-and-play design systems. Among\nmany other things, we might witness the birth of a world where\nphone users could eliminate branded apps, preferring a locally\ninstalled design system that could spin up UI without needing to\nload templates over the network.\nAs designers, we continue to rely on intuition, performance metrics,\nand user research to create products. If a large percentage of\nour users can complete a task and proceed to the next stage in\nthe flow, then we generally call the design successful. We use\ntemplating languages to add options to a design so even more users",
+      "metadata": {
+        "section": "The Future of Design Systems",
+        "chunkIndex": 14,
+        "pageRange": "123-141"
+      }
+    },
+    {
+      "id": "dsh-ch06-chunk-015",
+      "text": "reach their goals. But by connecting design systems to artificial\nintelligence, we could achieve a step change in customizable UI.\nInstead of designing products that work for most users, systems\ndesign and AI will apply specific solutions for specific individuals.\nDesigners should prepare now by discovering a bit about machine\nlearning, reading about the breakthroughs enabling AI today, and\nfinally, thinking about how ML could impact design tools.\nThere is this tremendous value to writing\nthings down in a way that others can\nunderstand it.\nRichard FULCHER — GOOGLE\nConclusion\nAs digital product designers, we’re asked to ride the waves of\nchange in our industry. People just like us helped small development\nteams create apps for desktop computing in the 1980s. In the\nlate 1990s, other designers formed a coalition that pressured\nlarge software companies to unite front-end web development\nthrough the web standards project. In the mid-2000s, we focused\non communication and user-generated content while developing\npatterns for creating web apps, and just a little later, all our work\nwas available in mobile form factors like the iPhone. Now, after\nnearly 4 decades of designed computing, design systems and\nAI are shaking hands—presenting us with new opportunities for\ninnovation at scale.",
+      "metadata": {
+        "section": "The Future of Design Systems",
+        "chunkIndex": 15,
+        "pageRange": "123-141"
+      }
+    },
+    {
+      "id": "dsh-ch06-chunk-016",
+      "text": "Every designer will now be asked how they might change custom,\none-off design solutions into reusable components that grow the\nsystem. We’ll have to think more holistically, and work collectively\nto develop and learn a new set of tools.\nHow can we work together to improve our workflows and better\nscale design? What should be in a design system standard, and\nwhat kinds of tools could be built if such a standard existed?\nHow will design systems and AI combine to create extremely\ncustomized interactions for end users? There are many questions,\nand each answer points to a possible future. What I love about\ndesign is that it enables each of us to explore the ideas we feel\nmay have the biggest impact, and project our ideas outward and\ninto the future. Innovation is certain.\n\nFurther reading\n01. Thinking in Symbols for Universal Design\n02. How to Improve UX with Machine Lea[r]ning: A Wonderful\nLesson from Netflix and More\n03. Algorithm-Driven Design: How Artificial Intelligence is\nChanging Design\n04. CreativeAI: On the Democratisation & Escalation of Creativity\n— Chapter 01\n05. Project Phoebe",
+      "metadata": {
+        "section": "The Future of Design Systems",
+        "chunkIndex": 16,
+        "pageRange": "123-141"
+      }
+    }
+  ],
+  "metadata": {
+    "category": "architecture",
+    "tags": [
+      "future",
+      "ai",
+      "automation",
+      "innovation",
+      "handbook",
+      "designbetter",
+      "smashingmagazine"
+    ],
+    "confidence": "high",
+    "system": "Design Systems Handbook",
+    "authors": "Marco Suarez, Jina Anne, Katie Sylor-Miller, Diana Mounter, Roy Stanfield",
+    "publisher": "DesignBetter.Co by InVision",
+    "year": "2017",
+    "chapter": "06",
+    "last_updated": "2025-03-26T00:00:00Z"
+  }
+}
