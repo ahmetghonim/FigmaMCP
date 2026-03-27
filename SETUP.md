@@ -1,4 +1,4 @@
-# FDIS Setup Guide
+# FigmaMCP Setup Guide
 ## Figma Design Intelligence System
 
 ---
@@ -18,13 +18,13 @@
 
 ### Option A: npm (recommended)
 ```bash
-npm install -g fdis
+npm install -g figmamcp
 ```
 
 ### Option B: From source
 ```bash
 git clone <your-repo-url>
-cd fdis
+cd FigmaMCP
 npm install
 npm run build
 ```
@@ -38,11 +38,11 @@ The plugin bridges Claude → your Figma file via WebSocket.
 1. Open **Figma Desktop** (must be the desktop app, not browser)
 2. Menu → **Plugins** → **Development** → **Import plugin from manifest...**
 3. Navigate to the plugin directory:
-   - **If installed via npm:** `$(npm root -g)/fdis/figma-desktop-bridge/manifest.json`
+   - **If installed via npm:** `$(npm root -g)/figmamcp/figma-desktop-bridge/manifest.json`
    - **If from source:** `./figma-desktop-bridge/manifest.json`
 4. Click **Open**
-5. The **FDIS Bridge** plugin now appears under **Plugins → Development**
-6. Run it: **Plugins → Development → FDIS Bridge**
+5. The **MCP Bridge** plugin now appears under **Plugins → Development**
+6. Run it: **Plugins → Development → MCP Bridge**
    - A small panel shows connection status
    - You should see a **green connected indicator** within a few seconds
 
@@ -58,9 +58,9 @@ or `%APPDATA%\Claude\claude_desktop_config.json` (Windows):
 ```json
 {
   "mcpServers": {
-    "fdis": {
+    "figmamcp": {
       "command": "npx",
-      "args": ["fdis"],
+      "args": ["figmamcp"],
       "env": {
         "FIGMA_ACCESS_TOKEN": "figd_your_personal_access_token",
         "ANTHROPIC_API_KEY": "sk-ant-your_api_key"
@@ -81,9 +81,9 @@ Edit `~/.claude/settings.json`:
 ```json
 {
   "mcpServers": {
-    "fdis": {
+    "figmamcp": {
       "command": "npx",
-      "args": ["fdis"],
+      "args": ["figmamcp"],
       "env": {
         "FIGMA_ACCESS_TOKEN": "figd_your_personal_access_token",
         "ANTHROPIC_API_KEY": "sk-ant-your_api_key"
@@ -102,7 +102,7 @@ Required for: reading file data, getting components/styles, comments, version hi
 
 1. Go to **Figma.com → Account Settings → Security**
 2. Scroll to **Personal access tokens** → **Generate new token**
-3. Name it "fdis" — permissions: **File content read**, **Variables read/write**
+3. Name it "figmamcp" — permissions: **File content read**, **Variables read/write**
 4. Copy the token and add to `FIGMA_ACCESS_TOKEN` in your MCP config
 
 ### Anthropic API Key
@@ -118,7 +118,7 @@ All tools work without this key in rule-based mode — just with less nuanced ou
 ## Step 6 — Verify Connection
 
 1. Open Figma Desktop with any design file
-2. Run **FDIS Bridge** plugin (Plugins → Development → FDIS Bridge)
+2. Run **MCP Bridge** plugin (Plugins → Development → MCP Bridge)
 3. Wait for green indicator
 4. Open Claude Desktop or Claude CLI
 5. Type: `"What's the status of my Figma connection?"`
@@ -141,17 +141,17 @@ All tools work without this key in rule-based mode — just with less nuanced ou
 
 ## Optional: Add Books to Knowledge Base
 
-FDIS ships with the **Design Systems Handbook** pre-ingested (7 chapters, 104 chunks).
+FigmaMCP ships with the **Design Systems Handbook** pre-ingested (7 chapters, 104 chunks).
 
 To add your own PDFs:
 
 ```bash
 # Drop the PDF in the books folder
-cp "YourBook.pdf" "$(npm root -g)/fdis/local-content-library/books/"
+cp "YourBook.pdf" "$(npm root -g)/figmamcp/local-content-library/books/"
 
 # Run the ingestion script
-python3 "$(npm root -g)/fdis/local-content-library/scripts/ingest-pdf.py" \
-  "$(npm root -g)/fdis/local-content-library/books/YourBook.pdf" \
+python3 "$(npm root -g)/figmamcp/local-content-library/scripts/ingest-pdf.py" \
+  "$(npm root -g)/figmamcp/local-content-library/books/YourBook.pdf" \
   --name "Book Title Here"
 ```
 
@@ -225,7 +225,7 @@ ingest_design_reference    — Add articles/guidelines to knowledge base
 
 ### "Desktop Bridge not connected"
 - Ensure Figma Desktop is running (not browser)
-- Check FDIS Bridge plugin is running (green dot)
+- Check MCP Bridge plugin is running (green dot)
 - Try: Plugins → Development → Reload plugin
 - Check port 9223 isn't blocked by firewall
 
@@ -237,10 +237,10 @@ ingest_design_reference    — Add articles/guidelines to knowledge base
 - Only needed for AI-powered tools
 - Rule-based mode works without it (less nuanced output)
 
-### Claude doesn't see FDIS tools
+### Claude doesn't see FigmaMCP tools
 - Restart Claude Desktop after config changes
-- Run `npx fdis` manually to check for errors
-- Verify `npx fdis` resolves: `which fdis` or `npx fdis --version`
+- Run `npx figmamcp` manually to check for errors
+- Verify `npx figmamcp` resolves: `which figmamcp` or `npx figmamcp --version`
 
 ---
 
@@ -250,7 +250,7 @@ ingest_design_reference    — Add articles/guidelines to knowledge base
 Claude (LLM)
     │
     ▼
-FDIS MCP Server (stdio)          ← This package
+FigmaMCP MCP Server (stdio)          ← This package
     │
     ├── Layer 1: figma-console-mcp base (65 tools)
     │   └── REST API + Desktop Bridge
@@ -282,7 +282,7 @@ FDIS MCP Server (stdio)          ← This package
     ┌───────┘
     │
     ▼
-FDIS Bridge Plugin (Figma Desktop)
+MCP Bridge Plugin (Figma Desktop)
     │
     ▼
 Figma Design File

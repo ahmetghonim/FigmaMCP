@@ -1,6 +1,6 @@
 /**
- * FDIS — Master Tool Registry
- * 97 tools total: 65 base (figma-console-mcp) + 32 new (FDIS engines)
+ * FigmaMCP — Master Tool Registry
+ * 97 tools total: 65 base (figma-console-mcp) + 32 new (FigmaMCP engines)
  */
 
 import type { McpServer } from "@modelcontextprotocol/sdk/server/mcp.js";
@@ -59,7 +59,7 @@ export function registerAllTools(
   registerCommentTools(server, getFigmaAPI, getCurrentUrl);
   registerDeepComponentTools(server, getDesktopConnector);
 
-  // ── New FDIS layers ───────────────────────────────────────────────────────
+  // ── New FigmaMCP layers ───────────────────────────────────────────────────────
   registerSynthesisTools(server, getDesktopConnector);
   registerTokenTools(server, getDesktopConnector);
   registerIntelligenceTools(server, getDesktopConnector);

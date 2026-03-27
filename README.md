@@ -1,4 +1,4 @@
-# FDIS — Figma Design Intelligence System
+# FigmaMCP — Figma Design Intelligence System
 
 > A Claude-powered MCP platform that gives Claude full creative and analytical control over Figma — equivalent to Cursor, but for design systems.
 
@@ -8,7 +8,7 @@ Works with **Claude Desktop** and **Claude CLI (Claude Code)**.
 
 ---
 
-## What Claude can do with FDIS
+## What Claude can do with FigmaMCP
 
 ```bash
 # Create a complete screen from a brief
@@ -41,7 +41,7 @@ headline, description, and navigation dots"
 ## Installation
 
 ```bash
-npm install -g fdis
+npm install -g figmamcp
 ```
 
 Then follow [SETUP.md](./SETUP.md) to install the Figma plugin and configure Claude.
@@ -50,9 +50,9 @@ Then follow [SETUP.md](./SETUP.md) to install the Figma plugin and configure Cla
 ```json
 {
   "mcpServers": {
-    "fdis": {
+    "figmamcp": {
       "command": "npx",
-      "args": ["fdis"],
+      "args": ["figmamcp"],
       "env": {
         "FIGMA_ACCESS_TOKEN": "figd_...",
         "ANTHROPIC_API_KEY": "sk-ant-..."
@@ -202,7 +202,7 @@ python3 local-content-library/scripts/ingest-pdf.py your-book.pdf --name "Book T
 Claude (LLM)                     ← Orchestrator
     │
     ▼
-FDIS MCP Server (stdio)          ← This package (97 tools)
+FigmaMCP MCP Server (stdio)          ← This package (97 tools)
     │
     ├── Intelligence Engine      ← figmalint: ComponentConsistencyEngine, TokenAnalyzer, NamingFixer
     ├── Component Synthesis      ← figma-cli: JSX → Figma Plugin API code
@@ -213,7 +213,7 @@ FDIS MCP Server (stdio)          ← This package (97 tools)
     └── Base Tools               ← figma-console-mcp (65 tools, kept 100%)
     │
     ▼
-FDIS Bridge Plugin (Figma Desktop)
+MCP Bridge Plugin (Figma Desktop)
     │ WebSocket on port 9223
     ▼
 Figma Design File

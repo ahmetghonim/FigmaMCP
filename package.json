@@ -1,12 +1,12 @@
 {
-  "name": "fdis",
+  "name": "figmamcp",
   "version": "1.0.0",
   "description": "Figma Design Intelligence System — A Claude-powered MCP platform for design creation, token orchestration, AI analysis, code generation, multi-tenant theming, and design system knowledge.",
   "type": "module",
   "main": "dist/local.js",
   "types": "dist/local.d.ts",
   "bin": {
-    "fdis": "./dist/local.js"
+    "figmamcp": "./dist/local.js"
   },
   "files": [
     "dist",

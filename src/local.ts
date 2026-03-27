@@ -1,9 +1,9 @@
 #!/usr/bin/env node
 /**
- * FDIS — Figma Design Intelligence System
+ * FigmaMCP — Figma Design Intelligence System
  * stdio MCP server entrypoint — Claude Desktop & Claude CLI
  *
- * Transport: WebSocket to FDIS Bridge plugin in Figma Desktop
+ * Transport: WebSocket to MCP Bridge plugin in Figma Desktop
  * Run: node dist/local.js
  */
 
@@ -15,12 +15,12 @@ import { FigmaWebSocketServer } from "./core/websocket-server.js";
 import { WebSocketConnector } from "./core/websocket-connector.js";
 import { registerAllTools } from "./tools/index.js";
 
-const logger = createChildLogger({ component: "fdis-server" });
+const logger = createChildLogger({ component: "figmamcp-server" });
 
 const DEFAULT_PORT = parseInt(process.env.FIGMA_WS_PORT ?? "9223", 10);
 const WS_HOST = process.env.FIGMA_WS_HOST ?? "localhost";
 
-// ─── WebSocket server (connects to FDIS Bridge plugin) ────────────────────────
+// ─── WebSocket server (connects to MCP Bridge plugin) ────────────────────────
 
 let _wsServer: FigmaWebSocketServer | null = null;
 let _connector: WebSocketConnector | null = null;
@@ -31,7 +31,7 @@ async function getDesktopConnector(): Promise<WebSocketConnector> {
 
   if (!_wsServer.isClientConnected()) {
     throw new Error(
-      "FDIS Bridge plugin not connected. Open Figma Desktop, run Plugins → Development → FDIS Bridge, and wait for the green dot."
+      "MCP Bridge plugin not connected. Open Figma Desktop, run Plugins → Development → MCP Bridge, and wait for the green dot."
     );
   }
 
@@ -71,7 +71,7 @@ async function startWebSocketServer(): Promise<void> {
     try {
       _wsServer = new FigmaWebSocketServer({ port, host: WS_HOST });
       await _wsServer.start();
-      logger.info({ port }, `FDIS WebSocket bridge listening on ws://${WS_HOST}:${port}`);
+      logger.info({ port }, `FigmaMCP WebSocket bridge listening on ws://${WS_HOST}:${port}`);
       return;
     } catch {
       _wsServer = null;
@@ -85,23 +85,23 @@ async function main(): Promise<void> {
   await startWebSocketServer();
 
   const server = new McpServer({
-    name: "fdis",
+    name: "figmamcp",
     version: "1.0.0",
     description:
       "Figma Design Intelligence System — 97 MCP tools: design creation, tokens, AI analysis, code generation, multi-tenant theming, accessibility, and design knowledge.",
   });
 
-  logger.info("Registering FDIS tools...");
+  logger.info("Registering FigmaMCP tools...");
   registerAllTools(server, getDesktopConnector, getFigmaAPI, getCurrentUrl);
 
   const transport = new StdioServerTransport();
   await server.connect(transport);
 
-  logger.info("FDIS running on stdio — ready for Claude ✓");
-  logger.info("Open the FDIS Bridge plugin in Figma to enable write tools");
+  logger.info("FigmaMCP running on stdio — ready for Claude ✓");
+  logger.info("Open the MCP Bridge plugin in Figma to enable write tools");
 }
 
 main().catch((err) => {
-  logger.error({ err }, "FDIS startup failed");
+  logger.error({ err }, "FigmaMCP startup failed");
   process.exit(1);
 });
